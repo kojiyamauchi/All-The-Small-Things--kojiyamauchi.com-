@@ -71,7 +71,7 @@
       </section>
     </div>
     <footer>
-      <p>© 2015 All The Small Things, All Rights Reserved. </p>
+      <p>© <?php echo date('Y'); ?> All The Small Things, All Rights Reserved. </p>
     </footer>
   </div>
   <!---------------------------------------------------- Default Display End. ----------------------------------------------------->
@@ -107,7 +107,7 @@
       </section>
     </div>
     <footer>
-      <p>© 2015 All The Small Things, All Rights Reserved. </p>
+      <p>© <?php echo date('Y'); ?> All The Small Things, All Rights Reserved. </p>
     </footer>
   </div>
   <!----------------------------------------- Case. Motion Skip Button Click Display End. ----------------------------------------->
@@ -138,5 +138,5 @@
       <br>Skip!!!</p>
   </div>
 </body>
-test
+
 </html>
