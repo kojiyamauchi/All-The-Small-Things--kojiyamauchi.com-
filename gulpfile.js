@@ -11,8 +11,8 @@ var gulp = require("gulp"), // call gulp.
   sftp = require("gulp-sftp"), // sftp plugin.
   using_PHP_LocalServerConnect = require("gulp-connect-php"), // using php local server connect plugin.
   browserSync = require("browser-sync"), // local browser sync plugin.
-  upLoadFileWrite = (["index.php", "**/index.php", "*.html", "**/*.html", "css/*.css", "css/**/*", "css/*.css.map", "sass/*.scss", "js/*.js", "images/*", "font/*"]), // upload file write.
-  notUpLoadFileWrite = (["!css/ie.css", "!css/print.css", "!css/screen.css", "!css/ie.css.map", "!css/print.css.map", "!css/screen.css.map", "!sass/ie.scss", "!sass/print.scss", "!sass/screen.scss"]), // don't upload file write.
+  upLoadFileWrite = (["index.php", "*.html", "css/*.css", "css/**/*", "css/*.css.map", "sass/*.scss", "js/*.js", "images/*", "font/*"]), // upload file write.
+  notUpLoadFileWrite = (["!css/ie.css", "!css/print.css", "!css/screen.css", "!css/ie.css.map", "!css/print.css.map", "!css/screen.css.map", "!sass/ie.scss", "!sass/print.scss", "!sass/screen.scss", "!**/.DS_Store", "!node_modules/**/*"]), // don't upload file write.
   upLoadFile = upLoadFileWrite.concat(notUpLoadFileWrite); //ftp upload file. variable upLoadFileWrite concatenate variable notUpLoadFileWrite.
 
 // sass compass.

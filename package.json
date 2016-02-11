@@ -1,0 +1,23 @@
+{
+  "name": "htdocs",
+  "version": "1.0.0",
+  "description": "All The Small Things, / kojiyamauchi.com   My Portfolio Web Site.   [http://kojiyamauchi.com](http://kojiyamauchi.com)",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kojiyamauchi/kojiyamauchi.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kojiyamauchi/kojiyamauchi.com/issues"
+  },
+  "homepage": "https://github.com/kojiyamauchi/kojiyamauchi.com#readme"
+}
