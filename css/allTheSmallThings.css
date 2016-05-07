@@ -119,7 +119,9 @@ a:hover {
   color: inherit;
   /*親要素の継承*/
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  /* On Hold
   opacity: 0.4;
+  */
 }
 
 img {
@@ -255,14 +257,14 @@ header h1#mainLogo a {
   transition: all 0.2s linear;
 }
 header h1#mainLogo a:hover {
-  -webkit-transform: scale(0.85);
-  -moz-transform: scale(0.85);
-  -ms-transform: scale(0.85);
-  transform: scale(0.85);
-  -webkit-transition: all 0.5s ease-in;
-  -moz-transition: all 0.5s ease-in;
-  -ms-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
+  -webkit-transform: scale(0.75);
+  -moz-transform: scale(0.75);
+  -ms-transform: scale(0.75);
+  transform: scale(0.75);
+  -webkit-transition: all 0.65s ease-in;
+  -moz-transition: all 0.65s ease-in;
+  -ms-transition: all 0.65s ease-in;
+  transition: all 0.65s ease-in;
 }
 
 @media all and (-ms-high-contrast: none) {
@@ -397,54 +399,54 @@ header h1#mainLogo a:hover {
   transition: all 0.5s;
 }
 #socialLink ul li a:hover {
-  -webkit-transform: scale(1.25);
-  -moz-transform: scale(1.25);
-  -ms-transform: scale(1.25);
-  transform: scale(1.25);
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transform: scale(1.45);
+  -moz-transform: scale(1.45);
+  -ms-transform: scale(1.45);
+  transform: scale(1.45);
+  -webkit-transition: all 0.65s;
+  -moz-transition: all 0.65s;
+  -ms-transition: all 0.65s;
+  transition: all 0.65s;
 }
 #socialLink ul li:nth-child(1) a {
-  background-image: url(../images/iconTwitter.svg);
+  background-image: url("../images/iconTwitter.svg");
 }
 #socialLink ul li:nth-child(2) a {
-  background-image: url(../images/iconFaceBook.svg);
+  background-image: url("../images/iconFaceBook.svg");
 }
 #socialLink ul li:nth-child(3) a {
-  background-image: url(../images/iconLinkedIn.svg);
+  background-image: url("../images/iconLinkedIn.svg");
 }
 #socialLink ul li:nth-child(4) a {
-  background-image: url(../images/iconBehance.svg);
+  background-image: url("../images/iconBehance.svg");
 }
 #socialLink ul li:nth-child(5) a {
-  background-image: url(../images/iconGitHub.svg);
+  background-image: url("../images/iconGitHub.svg");
 }
 #socialLink ul li:nth-child(6) a {
-  background-image: url(../images/iconInstagram.svg);
+  background-image: url("../images/iconInstagram.svg");
   padding: 0 0 0 50px;
 }
 
 @media all and (-ms-high-contrast: none) {
   /* IE Hack */
   #socialLink ul li:nth-child(1) a {
-    background-image: url(../images/iconTwitter.png);
+    background-image: url("../images/iconTwitter.png");
   }
   #socialLink ul li:nth-child(2) a {
-    background-image: url(../images/iconFaceBook.png);
+    background-image: url("../images/iconFaceBook.png");
   }
   #socialLink ul li:nth-child(3) a {
-    background-image: url(../images/iconLinkedIn.png);
+    background-image: url("../images/iconLinkedIn.png");
   }
   #socialLink ul li:nth-child(4) a {
-    background-image: url(../images/iconBahance.png);
+    background-image: url("../images/iconBahance.png");
   }
   #socialLink ul li:nth-child(5) a {
-    background-image: url(../images/iconGitHub.png);
+    background-image: url("../images/iconGitHub.png");
   }
   #socialLink ul li:nth-child(6) a {
-    background-image: url(../images/iconInstagram.png);
+    background-image: url("../images/iconInstagram.png");
   }
 }
 footer {
@@ -880,26 +882,19 @@ Responsive Media Queries
 }
 @media screen and (max-width:338px) { Small Smart Phone1.
 }
-
 Mac PC Default Window Width.
 -iMac 27inch & iMac 27inch Retina Display-
 width: 2560;
-
 -iMac 21.5inch-
 width: 2048;
-
 -MacBook Pro 15inch Retina Display-
 width: 1440;
-
 -MacBook Pro 13inch Retina Display-
 width: 1440;
-
 -MacBook Air 13inch-
 width: 1440;
-
 -MacBook Air 11inch-
 width: 1366;
-
 -MacBook 12inch Retina Display-
 width: 1280;
 */
