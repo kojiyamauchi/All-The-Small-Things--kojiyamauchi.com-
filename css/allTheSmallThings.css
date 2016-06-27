@@ -6,56 +6,56 @@
 /*==================================================================
 Reset & Default Setting CSS.
 ===================================================================*/
-html,
+a,
+address,
+article,
+aside,
+audio,
+blockquote,
 body,
+canvas,
+caption,
+code,
+dd,
 div,
-span,
-iframe,
+dl,
+dt,
+footer,
+form,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-p,
-a,
-address,
-img,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-pre,
-code,
-form,
-input,
-textarea,
-label,
-table,
-caption,
-tbody,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-footer,
 header,
 hgroup,
+html,
+iframe,
+img,
+input,
+label,
+li,
+mark,
 menu,
 nav,
+ol,
 output,
+p,
+pre,
 ruby,
 section,
+span,
 summary,
+table,
+tbody,
+td,
+textarea,
+th,
 time,
-mark,
-audio,
-video,
-blockquote {
+tr,
+ul,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -111,7 +111,7 @@ a {
   text-decoration: none;
   background: transparent;
 }
-a:link, a:visited, a:hover, a:active {
+a:active, a:hover, a:link, a:visited {
   color: #000;
   text-decoration: none;
 }
@@ -119,18 +119,18 @@ a:hover {
   color: inherit;
   /*親要素の継承*/
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
-  /* On Hold
-  opacity: 0.4;
-  */
+    /* On Hold
+opacity: 0.4;
+*/
 }
 
 img {
   vertical-align: middle;
 }
 
+li,
 ol,
-ul,
-li {
+ul {
   list-style-type: none;
 }
 

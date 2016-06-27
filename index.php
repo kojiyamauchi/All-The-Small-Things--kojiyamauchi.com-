@@ -128,8 +128,6 @@
       </span> <span class="logoNote hopping">
         <img src="images/allTheSmallThingsLogoNote.png">
       </span> <span class="logoMask">
-
-
         <img src="images/allTheSmallThingsLogoMask.png">
       </span> </span>
   </div>
