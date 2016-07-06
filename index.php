@@ -27,7 +27,7 @@
   <link rel="stylesheet" type="text/css" href="css/animate.css" />
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/allTheSmallThings.css">
-  <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
   <script type="text/javascript" src="js/jquery-ui.min.js"></script>
   <script type="text/javascript" src="js/jquery.lettering.js"></script>
   <script type="text/javascript" src="js/jquery.textillate.js"></script>
