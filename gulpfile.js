@@ -44,7 +44,7 @@ gulp.task("compressionImages", function () {
 
 // add vendor prefix automatically.
 gulp.task("autoprefixer", function () {
-    return gulp.src("css/*.css")
+    return gulp.src("css/allTheSmallThings.css")
         .pipe(autoprefixer({
             browsers: ["last 2 versions", "ie >= 9", "Android >= 4", "ios_saf >= 8"],
             cascade: false
