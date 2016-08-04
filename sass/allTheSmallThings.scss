@@ -65,12 +65,10 @@ video {
     font-weight: normal;
     vertical-align: baseline;
 }
-
 html {
     width: 100%;
     height: 100%;
 }
-
 body {
     font-family: "Helvetica Neue", Helvetica, arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     position: relative;
@@ -82,7 +80,6 @@ body {
     background: #fff;
     line-height: 1;
 }
-
 article,
 aside,
 details,
@@ -96,25 +93,25 @@ nav,
 section {
     display: block;
 }
-
 .clear {
     clear: both;
 }
-
 .clearfix:after {
     content: " ";
     display: block;
     clear: both;
 }
-
 a {
     color: #000;
     text-decoration: none;
     background: transparent;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
     &:active,
     &:hover,
     &:link,
@@ -123,9 +120,12 @@ a {
         text-decoration: none;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
     &:hover {
         color: inherit;
         /*親要素の継承*/
@@ -135,30 +135,29 @@ a {
     */
     }
 }
-
 img {
     vertical-align: middle;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
 li,
 ol,
 ul {
     list-style-type: none;
 }
-
 table {
     border-collapse: collapse;
     border-spacing: 0;
     table-layout: fixed;
 }
-
 textarea {
     resize: vertical;
 }
-
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -166,6 +165,7 @@ textarea {
     box-sizing: border-box;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 ::selection {
     background: RGBa(204, 0, 0, 0.1);
 }
@@ -176,14 +176,17 @@ textarea {
 }
 
 >>>>>>> 0965fa2... update 3files
+=======
+::selection {
+    background: RGBa(204, 0, 0, 0.1);
+}
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
 ::-moz-selection {
     background: RGBa(204, 0, 0, 0.1);
 }
-
 .displayPC {
     display: block;
 }
-
 .displaySP {
     display: none;
 }
@@ -217,12 +220,10 @@ All The Small Things, Top Page.
 html {
     overflow-x: hidden;
 }
-
 body {
     overflow-x: hidden;
     text-align: center;
 }
-
 #contents1 {
     width: 100%;
     height: 100%;
@@ -231,7 +232,6 @@ body {
     opacity: 0;
     margin-top: -30px;
 }
-
 #contents2 {
     width: 100%;
     height: 100%;
@@ -239,7 +239,6 @@ body {
     z-index: 0;
     display: none;
 }
-
 header h1#mainLogo {
     opacity: 0;
     /* IE and Old iPhone Introduction Animations Started Property*/
@@ -250,9 +249,12 @@ header h1#mainLogo {
     -ms-transition: -ms-transform 0.4s;
     transition: transform 0.4s;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
     &.IEandOldIphoneIntroAnimations {
         /* IE and Old iPhone Introduction Animations End Property*/
         -webkit-transform: scale(0.85);
@@ -263,9 +265,12 @@ header h1#mainLogo {
         transition: transform 1s;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
     a {
         font-family: 'Schoolbell', cursive;
         font-size: 10em;
@@ -283,9 +288,12 @@ header h1#mainLogo {
         -ms-transition: all 0.2s;
         transition: all 0.2s linear;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
         &:hover {
             -webkit-transform: scale(0.75);
             -moz-transform: scale(0.75);
@@ -308,9 +316,12 @@ header h1#mainLogo {
         -ms-transition: all 0.2s;
         transition: all 0.2s;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
         &:hover {
             -webkit-transform: scale(0.85);
             -ms-transform: scale(0.85);
@@ -321,7 +332,6 @@ header h1#mainLogo {
         }
     }
 }
-
 #mainDescription {
     position: relative;
     width: 300px;
@@ -329,18 +339,24 @@ header h1#mainLogo {
     margin: 70px auto 0;
     overflow: hidden;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
     h2 {
         font-size: 1.125em;
         font-family: sans-serif;
         color: #555;
         font-weight: bold;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
         &#kojiyamauchi {
             position: absolute;
             z-index: 2;
@@ -351,9 +367,12 @@ header h1#mainLogo {
             line-height: 30px;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
         &#myPortfolio {
             position: absolute;
             z-index: 1;
@@ -366,9 +385,12 @@ header h1#mainLogo {
         }
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
     #mainDescriptionBackIMG img {
         position: absolute;
         z-index: 0;
@@ -380,16 +402,18 @@ header h1#mainLogo {
         opacity: 0;
     }
 }
-
 #subDescription {
     position: relative;
     width: 500px;
     height: 30px;
     margin: 15px auto 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
     h3 {
         font-family: 'Patrick Hand', cursive;
         font-size: 1.25em;
@@ -404,9 +428,12 @@ header h1#mainLogo {
         line-height: 30px;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
     #subDescriptionBackIMG img {
         position: absolute;
         z-index: 0;
@@ -418,19 +445,22 @@ header h1#mainLogo {
         opacity: 0;
     }
 }
-
 #socialLink {
     margin: 48px 0 0;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
     h4 {
         font-size: 1.125em;
         font-family: sans-serif;
         color: #555;
         font-weight: bold;
 <<<<<<< HEAD
+<<<<<<< HEAD
         span {
             font-weight: bold;
         }
@@ -577,18 +607,17 @@ footer {
 }
 =======
 
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
         span {
             font-weight: bold;
         }
     }
-
     ul {
         display: table;
         margin: 20px auto 0;
-
         li {
             display: table-cell;
-
             a {
                 font-size: 0.875em;
                 font-weight: bold;
@@ -608,7 +637,6 @@ footer {
                 -moz-transition: all 0.5s;
                 -ms-transition: all 0.5s;
                 transition: all 0.5s;
-
                 &:hover {
                     -webkit-transform: scale(1.45);
                     -moz-transform: scale(1.45);
@@ -620,27 +648,21 @@ footer {
                     transition: all 0.65s;
                 }
             }
-
             &:nth-child(1) a {
                 background-image: url("../images/iconTwitter.svg");
             }
-
             &:nth-child(2) a {
                 background-image: url("../images/iconFaceBook.svg");
             }
-
             &:nth-child(3) a {
                 background-image: url("../images/iconLinkedIn.svg");
             }
-
             &:nth-child(4) a {
                 background-image: url("../images/iconBehance.svg");
             }
-
             &:nth-child(5) a {
                 background-image: url("../images/iconGitHub.svg");
             }
-
             &:nth-child(6) a {
                 background-image: url("../images/iconInstagram.svg");
                 padding: 0 0 0 50px;
@@ -654,33 +676,26 @@ footer {
         &:nth-child(1) a {
             background-image: url("../images/iconTwitter.png");
         }
-
         &:nth-child(2) a {
             background-image: url("../images/iconFaceBook.png");
         }
-
         &:nth-child(3) a {
             background-image: url("../images/iconLinkedIn.png");
         }
-
         &:nth-child(4) a {
             background-image: url("../images/iconBehance.png");
         }
-
         &:nth-child(5) a {
             background-image: url("../images/iconGitHub.png");
         }
-
         &:nth-child(6) a {
             background-image: url("../images/iconInstagram.png");
         }
     }
 }
-
 footer {
     margin: 65px 0 0;
     padding: 0 0 30px;
-
     p {
         font-family: 'Lobster', cursive;
         font-size: 1.375em;
@@ -688,18 +703,15 @@ footer {
         color: #999;
     }
 }
-
 #motionSkip {
     position: fixed;
     right: -1000px;
     bottom: 10px;
     z-index: 1000;
     display: none;
-
     &:hover {
         cursor: pointer;
     }
-
     p {
         font-family: arial;
         color: #fff;
@@ -709,7 +721,6 @@ footer {
         padding: 20px;
         border-radius: 100%;
     }
-
     &:before {
         content: "";
         position: absolute;
@@ -723,7 +734,6 @@ footer {
         border-radius: 0 30px 0 30px;
         z-index: -1;
     }
-
     &:after {
         content: "";
         position: absolute;
@@ -743,8 +753,11 @@ footer {
         transform: rotate(30deg);
     }
 }
+<<<<<<< HEAD
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
 #introWelcome {
     position: absolute;
     top: 50%;
@@ -754,9 +767,12 @@ footer {
     color: #000;
     display: none;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
     .welcomeFont {
         font-family: 'Roboto', sans-serif;
         font-size: 3.75em;
@@ -764,6 +780,7 @@ footer {
         font-style: italic;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     .fa-paper-plane-o {
         font-size: 4em;
     }
@@ -774,6 +791,11 @@ footer {
     }
 
 >>>>>>> 0965fa2... update 3files
+=======
+    .fa-paper-plane-o {
+        font-size: 4em;
+    }
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
     .allTheSmallThingsLogoWrap {
         width: 6em;
         height: 6em;
@@ -781,18 +803,24 @@ footer {
         top: 10px;
         display: inline-block;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
         .logoSneaker {
             width: 100%;
             position: absolute;
             top: 0;
             left: 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
             img {
                 width: 100%;
                 position: absolute;
@@ -801,18 +829,24 @@ footer {
             }
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
         .logoNote {
             width: 100%;
             position: absolute;
             top: 0;
             left: 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
             img {
                 width: 100%;
                 position: absolute;
@@ -822,18 +856,24 @@ footer {
             }
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
         .logoMask {
             width: 100%;
             position: absolute;
             top: 0;
             left: 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
             img {
                 width: 100%;
                 position: absolute;
@@ -844,27 +884,31 @@ footer {
         }
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
     .hopping {
         position: relative;
     }
 }
-
 #logoSVG {
     width: 780px;
     margin: 0 auto;
     padding: 45px 0 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
     svg path {
         opacity: 0;
     }
 }
-
 .introduction {
     pointer-events: none;
 }
@@ -877,6 +921,7 @@ Responsive Media Queries
         font-size: 150%;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     #contents1 {
         margin-top: -45px;
     }
@@ -885,23 +930,30 @@ Responsive Media Queries
     }
 =======
 
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
     #contents1 {
         margin-top: -45px;
     }
-
     header h1#mainLogo a {
         margin: 90px 0 0;
     }
+<<<<<<< HEAD
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
     #mainDescription {
         width: 450px;
         height: 45px;
         margin: 105px auto 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
         h2 {
             &#kojiyamauchi,
             &#myPortfolio {
@@ -911,40 +963,53 @@ Responsive Media Queries
             }
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
         #mainDescriptionBackIMG img {
             width: 45px;
             height: 45px;
         }
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
     #subDescription {
         width: 750px;
         height: 45px;
         margin: 22.5px auto 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
         h3 {
             width: 750px;
             height: 45px;
             line-height: 45px;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
         #subDescriptionBackIMG img {
             width: 45px;
             height: 45px;
         }
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
     #socialLink {
         margin: 72px 0 0;
@@ -952,13 +1017,17 @@ Responsive Media Queries
             margin: 30px auto 0;
 =======
 
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
     #socialLink {
         margin: 72px 0 0;
-
         ul {
             margin: 30px auto 0;
+<<<<<<< HEAD
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
             li {
                 a {
                     height: 60px;
@@ -966,9 +1035,12 @@ Responsive Media Queries
                     line-height: 60px;
                 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
                 &:nth-child(6) a {
                     padding: 0 0 0 75px;
                 }
@@ -976,25 +1048,34 @@ Responsive Media Queries
         }
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
     footer {
         margin: 97.5px 0 0;
         padding: 0 0 45px;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
     #motionSkip {
         p {
             padding: 30px;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
         &:before {
             right: 15px;
             width: 45px;
@@ -1002,15 +1083,19 @@ Responsive Media Queries
             border-radius: 0 45px 0 45px;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
         &:after {
             width: 45px;
             height: 45px;
             border-radius: 0 45px 0 45px;
         }
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
     #introWelcome {
         margin-top: -60px;
@@ -1022,6 +1107,11 @@ Responsive Media Queries
     }
 
 >>>>>>> 0965fa2... update 3files
+=======
+    #introWelcome {
+        margin-top: -60px;
+    }
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
     #logoSVG {
         width: 1170px;
         padding: 67.5px 0 0;
@@ -1033,6 +1123,7 @@ Responsive Media Queries
         font-size: 120%;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     #contents1 {
         margin-top: -36px;
     }
@@ -1041,23 +1132,30 @@ Responsive Media Queries
     }
 =======
 
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
     #contents1 {
         margin-top: -36px;
     }
-
     header h1#mainLogo a {
         margin: 72px 0 0;
     }
+<<<<<<< HEAD
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
     #mainDescription {
         width: 360px;
         height: 36px;
         margin: 84px auto 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
         h2 {
             &#kojiyamauchi,
             &#myPortfolio {
@@ -1067,40 +1165,53 @@ Responsive Media Queries
             }
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
         #mainDescriptionBackIMG img {
             width: 36px;
             height: 36px;
         }
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
     #subDescription {
         width: 600px;
         height: 36px;
         margin: 18px auto 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
         h3 {
             width: 600px;
             height: 36px;
             line-height: 36px;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
         #subDescriptionBackIMG img {
             width: 36px;
             height: 36px;
         }
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
     #socialLink {
         margin: 57.6px 0 0;
@@ -1108,13 +1219,17 @@ Responsive Media Queries
             margin: 24px auto 0;
 =======
 
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
     #socialLink {
         margin: 57.6px 0 0;
-
         ul {
             margin: 24px auto 0;
+<<<<<<< HEAD
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
             li {
                 a {
                     height: 48px;
@@ -1122,9 +1237,12 @@ Responsive Media Queries
                     line-height: 48px;
                 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
                 &:nth-child(6) a {
                     padding: 0 0 0 60px;
                 }
@@ -1132,25 +1250,34 @@ Responsive Media Queries
         }
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
     footer {
         margin: 78px 0 0;
         padding: 0 0 36px;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
     #motionSkip {
         p {
             padding: 24px;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
         &:before {
             right: 12px;
             width: 36px;
@@ -1158,15 +1285,19 @@ Responsive Media Queries
             border-radius: 0 36px 0 36px;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
         &:after {
             width: 36px;
             height: 36px;
             border-radius: 0 36px 0 36px;
         }
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
     #introWelcome {
         margin-top: -48px;
@@ -1178,6 +1309,11 @@ Responsive Media Queries
     }
 
 >>>>>>> 0965fa2... update 3files
+=======
+    #introWelcome {
+        margin-top: -48px;
+    }
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
     #logoSVG {
         width: 936px;
         padding: 54px 0 0;
@@ -1194,6 +1330,7 @@ Responsive Media Queries
         min-width: 800px;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     #contents1 {
         margin-top: -26.25px;
     }
@@ -1202,23 +1339,30 @@ Responsive Media Queries
     }
 =======
 
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
     #contents1 {
         margin-top: -26.25px;
     }
-
     header h1#mainLogo a {
         margin: 52.5px 0 0;
     }
+<<<<<<< HEAD
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
     #mainDescription {
         width: 262.5px;
         height: 26.25px;
         margin: 61.25px auto 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
         h2 {
             &#kojiyamauchi,
             &#myPortfolio {
@@ -1228,40 +1372,53 @@ Responsive Media Queries
             }
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
         #mainDescriptionBackIMG img {
             width: 26.25px;
             height: 26.25px;
         }
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
     #subDescription {
         width: 437.5px;
         height: 26.25px;
         margin: 13.125px auto 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
         h3 {
             width: 437.5px;
             height: 26.25px;
             line-height: 26.25px;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
         #subDescriptionBackIMG img {
             width: 26.25px;
             height: 26.25px;
         }
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
     #socialLink {
         margin: 42px 0 0;
@@ -1269,13 +1426,17 @@ Responsive Media Queries
             margin: 17.5px auto 0;
 =======
 
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
     #socialLink {
         margin: 42px 0 0;
-
         ul {
             margin: 17.5px auto 0;
+<<<<<<< HEAD
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
             li {
                 a {
                     height: 35px;
@@ -1283,9 +1444,12 @@ Responsive Media Queries
                     line-height: 35px;
                 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
                 &:nth-child(6) a {
                     padding: 0 0 0 43.75px;
                 }
@@ -1293,25 +1457,34 @@ Responsive Media Queries
         }
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
     footer {
         margin: 56.875px 0 0;
         padding: 0 0 26.25px;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
     #motionSkip {
         p {
             padding: 17.5px;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
         &:before {
             right: 8.75px;
             width: 26.25px;
@@ -1319,15 +1492,19 @@ Responsive Media Queries
             border-radius: 0 26.25px 0 26.25px;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
         &:after {
             width: 26.25px;
             height: 26.25px;
             border-radius: 0 26.25px 0 26.25px;
         }
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
     #introWelcome {
         margin-top: -35px;
@@ -1339,6 +1516,11 @@ Responsive Media Queries
     }
 
 >>>>>>> 0965fa2... update 3files
+=======
+    #introWelcome {
+        margin-top: -35px;
+    }
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
     #logoSVG {
         width: 682.5px;
         padding: 39.375px 0 0;
@@ -1354,9 +1536,12 @@ Responsive Media Queries
         display: none;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0965fa2... update 3files
+=======
+>>>>>>> 2634592fce0c4b08b796bdca79fbb51aef1f5ff0
     .displaySP {
         display: block;
     }
