@@ -4,4 +4,5 @@ My Portfolio Web Site.<br>
 
 I'm a Web Designer & Developer.<br>
 Based in Tokyo, Japan.<br>
+<br>
 HTML / HTML5 / CSS / CSS3 / Sass / Bootstrap / jQuery / javascript / gulp / GitHub / WordPress / Photoshop / Illustrator / GitHub Atom & Emmet.
