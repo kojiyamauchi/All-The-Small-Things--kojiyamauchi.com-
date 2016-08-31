@@ -95,6 +95,27 @@ jQuery(function ($) {
         });
     });
 
+    // Main Logo Hover Action.
+    $('#mainLogo a').on('mouseover', function () {
+        $('h2#kojiyamauchi').stop(true).animate({
+            'opacity': '0',
+            'top': '-300px'
+        }, 650, 'easeInExpo');
+        $('p#enter').stop(true).animate({
+            'opacity': '0.8',
+            'top': '0'
+        }, 650, 'easeInExpo');
+    }).on('mouseout', function () {
+        $('h2#kojiyamauchi').stop(true).animate({
+            'opacity': '1',
+            'top': '0px'
+        }, 200);
+        $('p#enter').stop(true).animate({
+            'opacity': '0',
+            'top': '300px'
+        }, 200);
+    });
+
     //socialLinkAction!!
     var $social = $("#socialLink h4").textillate({
         loop: false,
