@@ -51,7 +51,6 @@ jQuery(function ($) {
             "color": "#3F3F0D"
         });
     }
-<<<<<<< HEAD
 
     // Motion Skip Button Click Action!!
     $("#motionSkip").css({
@@ -115,50 +114,6 @@ jQuery(function ($) {
             'opacity': '0',
             'top': '300px'
         }, 200);
-=======
-
-    // Motion Skip Button Click Action!!
-    $("#motionSkip").css({
-        "right": -motionSkipWidth + "px"
-    });
-    $("#motionSkip").on("click", function () {
-        $("#logoSVG").fadeOut(500, "swing");
-        $("header h1#mainLogo").fadeTo(500, 1, "swing");
-        $("#contents1").fadeOut(500, "swing");
-        $("#contents2").fadeIn(500, "swing");
-        $("#contents2 footer p").textillate({
-            loop: true,
-            minDisplayTime: 2000,
-            initialDelay: 2000,
-            autoStart: true,
-            in: {
-                effect: "flash",
-                delayScale: 1.5,
-                delay: 100,
-                sequence: true,
-            },
-            out: {
-                effect: "flash",
-                delayScale: 1.0,
-                delay: 150,
-                sequence: true,
-            }
-        });
-        $(this).stop(true).animate({
-            transform: "scale(0.9)",
-            "opacity": 0.8
-        }, 200, "swing", function () {
-            $(this).stop(true).animate({
-                transform: "scale(1)",
-                "opacity": 1
-            }, 200, "swing");
-            $(this).delay(1000).animate({
-                "right": -motionSkipWidth + "px"
-            }, 1000, "easeInExpo", function () {
-                $(this).hide();
-            });
-        });
->>>>>>> 804f1befa9c4c891502dfcf8f5dcf12144df1001
     });
 
     //socialLinkAction!!
