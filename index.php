@@ -49,6 +49,7 @@
         <div id="mainDescription">
           <h2 id="kojiyamauchi">www.kojiyamauchi.com</h2>
           <h2 id="myPortfolio">koji yamauchi's portfolio site</h2>
+          <p id="enter">Main Contents Enter</p>
           <div id="mainDescriptionBackIMG"> <img src="images/hoveraction1.gif" width="" height="" alt="" /> </div>
         </div>
         <div id="subDescription">
@@ -85,6 +86,7 @@
         <div id="mainDescription">
           <h2 id="kojiyamauchi">www.kojiyamauchi.com</h2>
           <h2 id="myPortfolio">koji yamauchi's portfolio site</h2>
+          <p id="enter">Main Contents Enter</p>
           <div id="mainDescriptionBackIMG"> <img src="images/hoveraction1.gif" width="" height="" alt="" /> </div>
         </div>
         <div id="subDescription">
