@@ -308,6 +308,11 @@ header h1#mainLogo a:hover {
   height: 30px;
   line-height: 30px;
 }
+#mainDescription h2#kojiyamauchi span {
+  position: relative;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
 #mainDescription h2#myPortfolio {
   position: absolute;
   z-index: 1;
@@ -317,23 +322,6 @@ header h1#mainLogo a:hover {
   height: 30px;
   line-height: 30px;
   display: none;
-}
-#mainDescription p {
-  font-size: 1.125em;
-  font-family: sans-serif;
-  color: #777777;
-  font-weight: bold;
-}
-#mainDescription p#enter {
-  position: absolute;
-  z-index: 2;
-  right: 0;
-  left: 0;
-  top: 30px;
-  opacity: 0;
-  width: 300px;
-  height: 30px;
-  line-height: 30px;
 }
 #mainDescription #mainDescriptionBackIMG img {
   position: absolute;

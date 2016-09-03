@@ -47,9 +47,8 @@
     <div id="siteDescription">
       <section>
         <div id="mainDescription">
-          <h2 id="kojiyamauchi">www.kojiyamauchi.com</h2>
+          <h2 id="kojiyamauchi"><span>w</span><span>w</span><span>w</span><span>.</span><span>k</span><span>o</span><span>j</span><span>i</span><span>y</span><span>a</span><span>m</span><span>a</span><span>u</span><span>c</span><span>h</span><span>i</span><span>.</span><span>c</span><span>o</span><span>m</span></h2>
           <h2 id="myPortfolio">koji yamauchi's portfolio site</h2>
-          <p id="enter">Main Contents Enter</p>
           <div id="mainDescriptionBackIMG"> <img src="images/hoveraction1.gif" width="" height="" alt="" /> </div>
         </div>
         <div id="subDescription">
@@ -84,9 +83,8 @@
     <div id="siteDescription">
       <section>
         <div id="mainDescription">
-          <h2 id="kojiyamauchi">www.kojiyamauchi.com</h2>
+          <h2 id="kojiyamauchi"><span>w</span><span>w</span><span>w</span><span>.</span><span>k</span><span>o</span><span>j</span><span>i</span><span>y</span><span>a</span><span>m</span><span>a</span><span>u</span><span>c</span><span>h</span><span>i</span><span>.</span><span>c</span><span>o</span><span>m</span></h2>
           <h2 id="myPortfolio">koji yamauchi's portfolio site</h2>
-          <p id="enter">Main Contents Enter</p>
           <div id="mainDescriptionBackIMG"> <img src="images/hoveraction1.gif" width="" height="" alt="" /> </div>
         </div>
         <div id="subDescription">

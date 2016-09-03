@@ -97,23 +97,19 @@ jQuery(function ($) {
 
     // Main Logo Hover Action.
     $('#mainLogo a').on('mouseover', function () {
-        $('h2#kojiyamauchi').stop(true).animate({
-            'opacity': '0',
-            'top': '-300px'
-        }, 650, 'easeInExpo');
-        $('p#enter').stop(true).animate({
-            'opacity': '0.8',
-            'top': '0'
-        }, 650, 'easeInExpo');
-    }).on('mouseout', function () {
-        $('h2#kojiyamauchi').stop(true).animate({
-            'opacity': '1',
-            'top': '0px'
-        }, 200);
-        $('p#enter').stop(true).animate({
-            'opacity': '0',
-            'top': '300px'
-        }, 200);
+        $("h2#kojiyamauchi span").each(function (index) {
+            $(this).delay(index * 50).animate({
+                "top": "-2px"
+            }, 50, "linear", function () {
+                $(this).animate({
+                    "top": "2px"
+                }, 100, "linear", function () {
+                    $(this).animate({
+                        "top": "0px"
+                    }, 50, "linear");
+                });
+            });
+        });
     });
 
     //socialLinkAction!!
