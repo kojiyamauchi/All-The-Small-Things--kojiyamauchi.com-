@@ -8,6 +8,8 @@ var gulp = require("gulp"), // call gulp.
     noCompressionImagesFold = (["noCompressionImages/*.jpg", "noCompressionImages/*.jpeg", "noCompressionImages/*.png", "noCompressionImages/*.gif", "noCompressionImages/*.svg"]), // no compression images fold.
     compressionImageFold = "images/", // finish compression images fold.
     autoprefixer = require("gulp-autoprefixer"), // add vendor prefix in CSS automatically.
+    rename = require("gulp-rename"), // File Rename PlugIn.
+    del = require("del"), // File Delete, Not Gulp PlugIn.
     ftp = require("vinyl-ftp"), // ftp plugin.
     sftp = require("gulp-sftp"), // sftp plugin.
     using_PHP_LocalServerConnect = require("gulp-connect-php"), // using php local server connect plugin.
@@ -52,6 +54,20 @@ gulp.task("autoprefixer", function () {
         .pipe(gulp.dest("css/"));
 });
 
+// HTML File Rename PHP File. Setting at The Work Start.
+gulp.task("rename", function () {
+    gulp.src('index.html')
+        .pipe(rename({
+            extname: '.php'
+        }))
+        .pipe(gulp.dest('.'));
+});
+
+// HTML File & .DS_Store Delete. Setting at The Work Start.
+gulp.task("delete", function (cb) {
+    del(["index.html", "**/.DS_Store"], cb);
+});
+
 // local browser connect & sync.
 gulp.task("browserSync", function () {
     using_PHP_LocalServerConnect.server({
@@ -94,6 +110,8 @@ gulp.task("default", ["browserSync"], function () { // first task, local server 
     gulp.watch(noCompressionImagesFold, ["compressionImages"]); // watching noCompressionImages fold changed images, compression images.
     gulp.watch("sass/*.scss", ["compass"]); // watching sass file save's auto compile, using compass.
     gulp.watch("css/*.css", ["autoprefixer"]); // watching change's CSS flie. add vendor prefix automatically.
-    gulp.watch(upLoadFile, ["ftpUpLoad"]); // watching file save's auto ftp upload.
+    //gulp.watch("**/*", ["rename"]); // watching change's HTML flie. Rename PHP file.
+    //gulp.watch("**/*", ["delete"]); // watching rename PHP file. delet HTML file.
+    //gulp.watch(upLoadFile, ["ftpUpLoad"]); // watching file save's auto ftp upload.
     gulp.watch(upLoadFile, ["localBrowserReload"]); // watching file save's local browser reload.
 });
