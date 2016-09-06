@@ -137,8 +137,8 @@
   </div> -->
   <div id="motionSkipBox">
     <div id="motionSkip">
-      <p><span>M</span><span>o</span><span>t</span><span>i</span><span>o</span><span>n</span><br>
-        <span>S</span><span>k</span><span>i</span><span>p</span><span>!</span><span>!</span><span>!</span></p>
+      <p>Motion<br>
+        Skip!!!</p>
     </div>
     <img src="images/allTheSmallThingsLogo.svg">
   </div>
