@@ -3,7 +3,7 @@
 jQuery(function ($) {
 
     // Global Variable & Function.==========================================================================================================================
-    var motionSkipWidth = $("#motionSkip").width();
+    var motionSkipBoxWidth = $("#motionSkipBox").width();
 
     function introWelcomeHopping() {
         $("span.hopping").each(function (index) { // All Animation Time 1700s.
@@ -24,6 +24,7 @@ jQuery(function ($) {
     $(".logoSneaker").children("img").attr("src", "images/allTheSmallThingsLogoSneaker" + randomNumber + ".png");
     $(".logoNote").children("img").attr("src", "images/allTheSmallThingsLogoNote" + randomNumber + ".png");
     $(".logoMask").children("img").attr("src", "images/allTheSmallThingsLogoMask" + randomNumber + ".png");
+    $('#motionSkipBox').children("img").attr("src", "images/allTheSmallThingsLogo" + randomNumber + ".svg");
 
     //Change's "Welcome" Font Color.
     if(randomNumber == 1 || randomNumber == 2) {
@@ -53,10 +54,10 @@ jQuery(function ($) {
     }
 
     // Motion Skip Button Click Action!!
-    $("#motionSkip").css({
-        "right": -motionSkipWidth + "px"
+    $("#motionSkipBox").css({
+        "right": -motionSkipBoxWidth + "px"
     });
-    $("#motionSkip").on("click", function () {
+    $("#motionSkipBox").on("click", function () {
         $("#logoSVG").fadeOut(500, "swing");
         $("header h1#mainLogo").fadeTo(500, 1, "swing");
         $("#contents1").fadeOut(500, "swing");
@@ -86,12 +87,11 @@ jQuery(function ($) {
             $(this).stop(true).animate({
                 transform: "scale(1)",
                 "opacity": 1
-            }, 200, "swing");
-            $(this).delay(1000).animate({
-                "right": -motionSkipWidth + "px"
+            }, 200, "swing").delay(1000).animate({
+                "right": -motionSkipBoxWidth + "px"
             }, 1000, "easeInExpo", function () {
                 $(this).hide();
-            });
+            }).children('#motionSkip').removeClass('comp');
         });
     });
 
@@ -162,9 +162,10 @@ jQuery(function ($) {
                 "left": 2000
             }, 1500, "easeInExpo", function () {
                 $(this).fadeOut(100, "linear");
-                $("#motionSkip").fadeIn(100, "linear").delay(150).animate({
+                $("#motionSkipBox").fadeIn(100, "linear").delay(150).animate({
                     "right": 0
                 }, 1000, "easeOutExpo");
+                $('#motionSkip').addClass('comp');
                 $("#contents1").delay(1000).animate({
                     "margin-top": "0px",
                     "opacity": 1
@@ -189,11 +190,14 @@ jQuery(function ($) {
                                                     setTimeout(function () {
                                                         $("a").removeClass("introduction");
                                                     }, 2000);
-                                                    $("#motionSkip").delay(2000).animate({
-                                                        "right": -motionSkipWidth + "px"
+                                                    $("#motionSkipBox").delay(2000).animate({
+                                                        "right": -motionSkipBoxWidth + "px"
                                                     }, 1000, "easeInExpo", function () {
                                                         $(this).hide();
                                                     });
+                                                    setTimeout(function () {
+                                                        $('#motionSkip').removeClass('comp');
+                                                    }, 2250);
                                                     //copyrightAction!!
                                                     $("footer p").textillate({
                                                         loop: true,
@@ -336,9 +340,10 @@ jQuery(function ($) {
                 "left": 2000
             }, 1500, "easeInExpo", function () {
                 $(this).fadeOut(100, "linear");
-                $("#motionSkip").fadeIn(100, "linear").delay(150).animate({
+                $("#motionSkipBox").fadeIn(100, "linear").delay(150).animate({
                     "right": 0
                 }, 1000, "easeOutExpo");
+                $('#motionSkip').addClass('comp');
                 setTimeout(function () {
                     logoSVGAnimation();
                 }, 1200);
@@ -402,11 +407,14 @@ jQuery(function ($) {
                                             setTimeout(function () {
                                                 $("a").removeClass("introduction");
                                             }, 2000);
-                                            $("#motionSkip").delay(2000).animate({
-                                                "right": -motionSkipWidth + "px"
+                                            $("#motionSkipBox").delay(2000).animate({
+                                                "right": -motionSkipBoxWidth + "px"
                                             }, 1000, "easeInExpo", function () {
                                                 $(this).hide();
                                             });
+                                            setTimeout(function () {
+                                                $('#motionSkip').removeClass('comp');
+                                            }, 2250);
                                             //copyrightAction!!
                                             $("footer p").textillate({
                                                 loop: true,

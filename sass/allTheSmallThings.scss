@@ -501,7 +501,84 @@ footer {
     }
 }
 
-#motionSkip {
+#motionSkipBox {
+    width: 150px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    #motionSkip {
+        position: absolute;
+        width: 130px;
+        top: -15%;
+        left: -32%;
+        transform: translate(0,10%);
+        opacity: 0;
+        transition: all 0.75s ease;
+
+        &.comp {
+            transform: translate(0,0);
+            opacity: 1;
+            transition: all 0.75s ease 0.25s;
+        }
+
+        p {
+            background: #000;
+            margin: 0;
+            padding: 20px;
+            border-radius: 100%;
+
+            span {
+                font-family: arial;
+                color: #fff;
+                font-size: 1.75em;
+            }
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            right: 10px;
+            margin-left: 0;
+            display: block;
+            width: 30px;
+            height: 30px;
+            background: #000;
+            border-radius: 0 30px 0 30px;
+            z-index: -1;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin-left: 0;
+            display: block;
+            width: 30px;
+            height: 30px;
+            background: #FFF;
+            border-radius: 0 30px 0 30px;
+            z-index: -1;
+            -webkit-transform: rotate(30deg);
+            -moz-transform: rotate(30deg);
+            -ms-transform: rotate(30deg);
+            -o-transform: rotate(30deg);
+            transform: rotate(30deg);
+        }
+    }
+}
+/* #motionSkip {
     position: fixed;
     right: -1000px;
     bottom: 10px;
@@ -554,8 +631,7 @@ footer {
         -o-transform: rotate(30deg);
         transform: rotate(30deg);
     }
-}
-
+}*/
 #introWelcome {
     position: absolute;
     top: 50%;
@@ -725,22 +801,28 @@ Responsive Media Queries
         padding: 0 0 45px;
     }
 
-    #motionSkip {
-        p {
-            padding: 30px;
-        }
+    #motionSkipBox {
+        width: 225px;
 
-        &:before {
-            right: 15px;
-            width: 45px;
-            height: 45px;
-            border-radius: 0 45px 0 45px;
-        }
+        #motionSkip {
+            width: 195px;
 
-        &:after {
-            width: 45px;
-            height: 45px;
-            border-radius: 0 45px 0 45px;
+            p {
+                padding: 30px;
+            }
+
+            &:before {
+                right: 15px;
+                width: 45px;
+                height: 45px;
+                border-radius: 0 45px 0 45px;
+            }
+
+            &:after {
+                width: 45px;
+                height: 45px;
+                border-radius: 0 45px 0 45px;
+            }
         }
     }
 
@@ -829,22 +911,28 @@ Responsive Media Queries
         padding: 0 0 36px;
     }
 
-    #motionSkip {
-        p {
-            padding: 24px;
-        }
+    #motionSkipBox {
+        width: 180px;
 
-        &:before {
-            right: 12px;
-            width: 36px;
-            height: 36px;
-            border-radius: 0 36px 0 36px;
-        }
+        #motionSkip {
+            width: 156px;
 
-        &:after {
-            width: 36px;
-            height: 36px;
-            border-radius: 0 36px 0 36px;
+            p {
+                padding: 24px;
+            }
+
+            &:before {
+                right: 12px;
+                width: 36px;
+                height: 36px;
+                border-radius: 0 36px 0 36px;
+            }
+
+            &:after {
+                width: 36px;
+                height: 36px;
+                border-radius: 0 36px 0 36px;
+            }
         }
     }
 
@@ -938,22 +1026,28 @@ Responsive Media Queries
         padding: 0 0 26.25px;
     }
 
-    #motionSkip {
-        p {
-            padding: 17.5px;
-        }
+    #motionSkipBox {
+        width: 131.25px;
 
-        &:before {
-            right: 8.75px;
-            width: 26.25px;
-            height: 26.25px;
-            border-radius: 0 26.25px 0 26.25px;
-        }
+        #motionSkip {
+            width: 113.75px;
 
-        &:after {
-            width: 26.25px;
-            height: 26.25px;
-            border-radius: 0 26.25px 0 26.25px;
+            p {
+                padding: 17.5px;
+            }
+
+            &:before {
+                right: 8.75px;
+                width: 26.25px;
+                height: 26.25px;
+                border-radius: 0 26.25px 0 26.25px;
+            }
+
+            &:after {
+                width: 26.25px;
+                height: 26.25px;
+                border-radius: 0 26.25px 0 26.25px;
+            }
         }
     }
 
