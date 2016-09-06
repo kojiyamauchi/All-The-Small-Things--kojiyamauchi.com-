@@ -506,7 +506,7 @@ footer {
     z-index: 1000;
     right: 0;
     bottom: 0;
-    width: 150px;
+    width: 100px;
 
     &:hover {
         cursor: pointer;
@@ -518,9 +518,9 @@ footer {
 
     #motionSkip {
         position: absolute;
-        top: -8%;
-        left: -40%;
-        width: 130px;
+        top: -28%;
+        left: -60%;
+        width: 110px;
         transition: all 0.75s ease;
         transform: translate(0,10%);
         opacity: 0;
@@ -538,7 +538,7 @@ footer {
             border-radius: 100%;
             background: #000;
             font-family: arial;
-            font-size: 1.75em;
+            font-size: 1.5em;
         }
 
         &:before {
@@ -799,10 +799,10 @@ Responsive Media Queries
     }
 
     #motionSkipBox {
-        width: 225px;
+        width: 150px;
 
         #motionSkip {
-            width: 195px;
+            width: 165px;
 
             p {
                 padding: 30px;
@@ -909,10 +909,10 @@ Responsive Media Queries
     }
 
     #motionSkipBox {
-        width: 180px;
+        width: 120px;
 
         #motionSkip {
-            width: 156px;
+            width: 132px;
 
             p {
                 padding: 24px;
@@ -1024,10 +1024,10 @@ Responsive Media Queries
     }
 
     #motionSkipBox {
-        width: 131.25px;
+        width: 87.5px;
 
         #motionSkip {
-            width: 113.75px;
+            width: 96.25px;
 
             p {
                 padding: 17.5px;

@@ -460,7 +460,7 @@ footer p {
   z-index: 1000;
   right: 0;
   bottom: 0;
-  width: 150px;
+  width: 100px;
 }
 #motionSkipBox:hover {
   cursor: pointer;
@@ -470,9 +470,9 @@ footer p {
 }
 #motionSkipBox #motionSkip {
   position: absolute;
-  top: -8%;
-  left: -40%;
-  width: 130px;
+  top: -28%;
+  left: -60%;
+  width: 110px;
   -webkit-transition: all 0.75s ease;
   transition: all 0.75s ease;
   -webkit-transform: translate(0, 10%);
@@ -495,7 +495,7 @@ footer p {
   border-radius: 100%;
   background: #000;
   font-family: arial;
-  font-size: 1.75em;
+  font-size: 1.5em;
 }
 #motionSkipBox #motionSkip:before {
   position: absolute;
@@ -729,10 +729,10 @@ Responsive Media Queries
   }
 
   #motionSkipBox {
-    width: 225px;
+    width: 150px;
   }
   #motionSkipBox #motionSkip {
-    width: 195px;
+    width: 165px;
   }
   #motionSkipBox #motionSkip p {
     padding: 30px;
@@ -823,10 +823,10 @@ Responsive Media Queries
   }
 
   #motionSkipBox {
-    width: 180px;
+    width: 120px;
   }
   #motionSkipBox #motionSkip {
-    width: 156px;
+    width: 132px;
   }
   #motionSkipBox #motionSkip p {
     padding: 24px;
@@ -922,10 +922,10 @@ Responsive Media Queries
   }
 
   #motionSkipBox {
-    width: 131.25px;
+    width: 87.5px;
   }
   #motionSkipBox #motionSkip {
-    width: 113.75px;
+    width: 96.25px;
   }
   #motionSkipBox #motionSkip p {
     padding: 17.5px;
