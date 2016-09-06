@@ -470,8 +470,8 @@ footer p {
 }
 #motionSkipBox #motionSkip {
   position: absolute;
-  top: -15%;
-  left: -32%;
+  top: -8%;
+  left: -40%;
   width: 130px;
   -webkit-transition: all 0.75s ease;
   transition: all 0.75s ease;
