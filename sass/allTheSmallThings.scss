@@ -507,6 +507,8 @@ footer {
     right: 0;
     bottom: 0;
     width: 100px;
+    height: 132px;
+    display: none;
 
     &:hover {
         cursor: pointer;
@@ -514,6 +516,27 @@ footer {
 
     img {
         width: 100%;
+
+        &#motionSkipSneaker {
+            position: absolute;
+            z-index: 101;
+            top: 0;
+            left: 0;
+        }
+
+        &#motionSkipNote {
+            position: absolute;
+            z-index: 102;
+            top: 0;
+            left: 0;
+        }
+
+        &#motionSkipMask {
+            position: absolute;
+            z-index: 103;
+            top: 0;
+            left: 0;
+        }
     }
 
     #motionSkip {
@@ -800,6 +823,7 @@ Responsive Media Queries
 
     #motionSkipBox {
         width: 150px;
+        height: 198px;
 
         #motionSkip {
             width: 165px;
@@ -910,6 +934,7 @@ Responsive Media Queries
 
     #motionSkipBox {
         width: 120px;
+        height: 158.4px;
 
         #motionSkip {
             width: 132px;
@@ -1025,6 +1050,7 @@ Responsive Media Queries
 
     #motionSkipBox {
         width: 87.5px;
+        height: 115.5px;
 
         #motionSkip {
             width: 96.25px;

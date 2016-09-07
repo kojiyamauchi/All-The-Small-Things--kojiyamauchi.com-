@@ -24,7 +24,9 @@ jQuery(function ($) {
     $(".logoSneaker").children("img").attr("src", "images/allTheSmallThingsLogoSneaker" + randomNumber + ".png");
     $(".logoNote").children("img").attr("src", "images/allTheSmallThingsLogoNote" + randomNumber + ".png");
     $(".logoMask").children("img").attr("src", "images/allTheSmallThingsLogoMask" + randomNumber + ".png");
-    $('#motionSkipBox').children("img").attr("src", "images/allTheSmallThingsLogo" + randomNumber + ".svg");
+    $('#motionSkipBox').children("img#motionSkipSneaker").attr("src", "images/allTheSmallThingsLogoSneaker" + randomNumber + ".svg");
+    $('#motionSkipBox').children("img#motionSkipNote").attr("src", "images/allTheSmallThingsLogoNote" + randomNumber + ".svg");
+    $('#motionSkipBox').children("img#motionSkipMask").attr("src", "images/allTheSmallThingsLogoMask" + randomNumber + ".svg");
 
     //Change's "Welcome" Font Color.
     if(randomNumber == 1 || randomNumber == 2) {
@@ -80,18 +82,16 @@ jQuery(function ($) {
                 sequence: true,
             }
         });
-        $(this).stop(true).animate({
-            transform: "scale(0.9)",
-            "opacity": 0.8
-        }, 200, "swing", function () {
+        $(this).children('img#motionSkipNote').stop(true).animate({
+            'top': '-60px'
+        }, 250, "swing", function () {
             $(this).stop(true).animate({
-                transform: "scale(1)",
-                "opacity": 1
-            }, 200, "swing").delay(1000).animate({
+                'top': '0px'
+            }, 250, "swing").prevAll('#motionSkip').removeClass('comp').parent('#motionSkipBox').delay(250).animate({
                 "right": -motionSkipBoxWidth + "px"
             }, 1000, "easeInExpo", function () {
                 $(this).hide();
-            }).children('#motionSkip').removeClass('comp');
+            })
         });
     });
 

@@ -140,7 +140,9 @@
       <p>Motion<br>
         Skip!!!</p>
     </div>
-    <img src="images/allTheSmallThingsLogo.svg">
+    <img src="images/allTheSmallThingsLogoSneaker.svg" id="motionSkipSneaker">
+    <img src="images/allTheSmallThingsLogoNote.svg" id="motionSkipNote">
+    <img src="images/allTheSmallThingsLogoMask.svg" id="motionSkipMask">
   </div>
 </body>
 

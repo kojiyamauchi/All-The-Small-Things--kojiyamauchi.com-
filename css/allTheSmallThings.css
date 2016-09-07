@@ -461,12 +461,32 @@ footer p {
   right: 0;
   bottom: 0;
   width: 100px;
+  height: 132px;
+  display: none;
 }
 #motionSkipBox:hover {
   cursor: pointer;
 }
 #motionSkipBox img {
   width: 100%;
+}
+#motionSkipBox img#motionSkipSneaker {
+  position: absolute;
+  z-index: 101;
+  top: 0;
+  left: 0;
+}
+#motionSkipBox img#motionSkipNote {
+  position: absolute;
+  z-index: 102;
+  top: 0;
+  left: 0;
+}
+#motionSkipBox img#motionSkipMask {
+  position: absolute;
+  z-index: 103;
+  top: 0;
+  left: 0;
 }
 #motionSkipBox #motionSkip {
   position: absolute;
@@ -730,6 +750,7 @@ Responsive Media Queries
 
   #motionSkipBox {
     width: 150px;
+    height: 198px;
   }
   #motionSkipBox #motionSkip {
     width: 165px;
@@ -824,6 +845,7 @@ Responsive Media Queries
 
   #motionSkipBox {
     width: 120px;
+    height: 158.4px;
   }
   #motionSkipBox #motionSkip {
     width: 132px;
@@ -923,6 +945,7 @@ Responsive Media Queries
 
   #motionSkipBox {
     width: 87.5px;
+    height: 115.5px;
   }
   #motionSkipBox #motionSkip {
     width: 96.25px;
