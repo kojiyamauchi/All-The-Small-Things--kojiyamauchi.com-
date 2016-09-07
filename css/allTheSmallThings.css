@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Schoolbell);
-@import url(https://fonts.googleapis.com/css?family=Patrick+Hand);
+@import url(https://fonts.googleapis.com/css?family=Patrick+Hand|Patrick+Hand+SC);
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 @import url(https://fonts.googleapis.com/css?family=Roboto:900italic);
 /*==================================================================
@@ -490,11 +490,11 @@ footer p {
 }
 #motionSkipBox #motionSkip {
   position: absolute;
-  top: -28%;
+  top: -22%;
   left: -60%;
   width: 110px;
-  -webkit-transition: all 0.75s ease;
-  transition: all 0.75s ease;
+  -webkit-transition: all 0.75s ease 0.25s;
+  transition: all 0.75s ease 0.25s;
   -webkit-transform: translate(0, 10%);
   -ms-transform: translate(0, 10%);
   transform: translate(0, 10%);
@@ -510,12 +510,26 @@ footer p {
 }
 #motionSkipBox #motionSkip p {
   margin: 0;
-  padding: 20px;
+  padding: 15px;
   color: #fff;
   border-radius: 100%;
   background: #000;
-  font-family: arial;
+  font-family: 'Patrick Hand', cursive;
   font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 0;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  #motionSkipBox #motionSkip p {
+    /* Safari Hack */
+    letter-spacing: -0.05em;
+  }
+}
+@media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  #motionSkipBox #motionSkip p {
+    /* Chrome Hack */
+    letter-spacing: 0;
+  }
 }
 #motionSkipBox #motionSkip:before {
   position: absolute;
@@ -756,7 +770,7 @@ Responsive Media Queries
     width: 165px;
   }
   #motionSkipBox #motionSkip p {
-    padding: 30px;
+    padding: 22.5px;
   }
   #motionSkipBox #motionSkip:before {
     right: 15px;
@@ -851,7 +865,7 @@ Responsive Media Queries
     width: 132px;
   }
   #motionSkipBox #motionSkip p {
-    padding: 24px;
+    padding: 18px;
   }
   #motionSkipBox #motionSkip:before {
     right: 12px;
@@ -951,7 +965,7 @@ Responsive Media Queries
     width: 96.25px;
   }
   #motionSkipBox #motionSkip p {
-    padding: 17.5px;
+    padding: 13.125px;
   }
   #motionSkipBox #motionSkip:before {
     right: 8.75px;

@@ -197,7 +197,7 @@ jQuery(function ($) {
                                                     });
                                                     setTimeout(function () {
                                                         $('#motionSkip').removeClass('comp');
-                                                    }, 2250);
+                                                    }, 2000);
                                                     //copyrightAction!!
                                                     $("footer p").textillate({
                                                         loop: true,
@@ -414,7 +414,7 @@ jQuery(function ($) {
                                             });
                                             setTimeout(function () {
                                                 $('#motionSkip').removeClass('comp');
-                                            }, 2250);
+                                            }, 2000);
                                             //copyrightAction!!
                                             $("footer p").textillate({
                                                 loop: true,

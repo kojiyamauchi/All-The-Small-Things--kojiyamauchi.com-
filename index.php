@@ -136,8 +136,8 @@
   </div> -->
   <div id="motionSkipBox">
     <div id="motionSkip">
-      <p>Motion<br>
-        Skip!!!</p>
+      <p>MOTION<br>
+        SKIP!!!</p>
     </div>
     <img src="images/allTheSmallThingsLogoSneaker.svg" id="motionSkipSneaker">
     <img src="images/allTheSmallThingsLogoNote.svg" id="motionSkipNote">
