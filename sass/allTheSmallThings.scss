@@ -572,6 +572,31 @@ footer {
                 /* Chrome Hack */
                 letter-spacing: 0;
             }
+
+            &.scale {
+                animation-name: scale;
+                animation-duration: 0.85s;
+                animation-timing-function: ease-out;
+                animation-iteration-count: infinite;
+                animation-delay: 1.25s;
+            }
+
+            &.scaleStop {
+                animation-play-state: paused;
+            }
+            @keyframes scale {
+                0% {
+                    transform: scale(1);
+                }
+
+                50% {
+                    transform: scale(0.95);
+                }
+
+                100% {
+                    transform: scale(1);
+                }
+            }
         }
 
         &:before {

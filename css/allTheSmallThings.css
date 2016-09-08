@@ -531,6 +531,50 @@ footer p {
     letter-spacing: 0;
   }
 }
+#motionSkipBox #motionSkip p.scale {
+  -webkit-animation-name: scale;
+  animation-name: scale;
+  -webkit-animation-duration: 0.85s;
+  animation-duration: 0.85s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-delay: 1.25s;
+  animation-delay: 1.25s;
+}
+#motionSkipBox #motionSkip p.scaleStop {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
 #motionSkipBox #motionSkip:before {
   position: absolute;
   z-index: -1;

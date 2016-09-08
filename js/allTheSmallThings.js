@@ -60,6 +60,7 @@ jQuery(function ($) {
         "right": -motionSkipBoxWidth + "px"
     });
     $("#motionSkipBox").on("click", function () {
+        $(this).find('p').addClass('scaleStop');
         $("#logoSVG").fadeOut(500, "swing");
         $("header h1#mainLogo").fadeTo(500, 1, "swing");
         $("#contents1").fadeOut(500, "swing");
@@ -167,7 +168,7 @@ jQuery(function ($) {
                 $("#motionSkipBox").fadeIn(100, "linear").delay(150).animate({
                     "right": 0
                 }, 1000, "easeOutExpo");
-                $('#motionSkip').addClass('comp');
+                $('#motionSkip').addClass('comp').children('p').addClass('scale');
                 $("#contents1").delay(1000).animate({
                     "margin-top": "0px",
                     "opacity": 1
@@ -345,7 +346,7 @@ jQuery(function ($) {
                 $("#motionSkipBox").fadeIn(100, "linear").delay(150).animate({
                     "right": 0
                 }, 1000, "easeOutExpo");
-                $('#motionSkip').addClass('comp');
+                $('#motionSkip').addClass('comp').children('p').addClass('scale');
                 setTimeout(function () {
                     logoSVGAnimation();
                 }, 1200);
