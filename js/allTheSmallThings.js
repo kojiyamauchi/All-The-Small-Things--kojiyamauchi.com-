@@ -91,7 +91,7 @@ jQuery(function ($) {
                 "right": -motionSkipBoxWidth + "px"
             }, 1000, "easeInExpo", function () {
                 $(this).hide();
-            })
+            });
         });
     });
 
@@ -110,6 +110,8 @@ jQuery(function ($) {
                 });
             });
         });
+    }).on('mouseout', function () {
+        $('h2#kojiyamauchi span').clearQueue().stop(true).removeAttr('style');
     });
 
     //socialLinkAction!!
@@ -130,8 +132,8 @@ jQuery(function ($) {
             effect: 'bounce',
             sequence: false,
             reverse: false,
-            sync: false,
-            shuffle: true,
+            sync: true,
+            shuffle: false,
         }
     });
     $("#socialLink ul li a").on("mouseover", function () {
