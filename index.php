@@ -130,10 +130,6 @@
         <img src="images/allTheSmallThingsLogoMask.png">
       </span> </span>
   </div>
-  <!-- <div id="motionSkip">
-    <p>Motion
-      <br>Skip!!!</p>
-  </div> -->
   <div id="motionSkipBox">
     <div id="motionSkip">
       <p>MOTION<br>
