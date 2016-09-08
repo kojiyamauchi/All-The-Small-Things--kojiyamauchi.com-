@@ -60,7 +60,7 @@ jQuery(function ($) {
         "right": -motionSkipBoxWidth + "px"
     });
     $("#motionSkipBox").on("click", function () {
-        $(this).find('p').addClass('scaleStop');
+        //$(this).find('p').addClass('scaleStop');
         $("#logoSVG").fadeOut(500, "swing");
         $("header h1#mainLogo").fadeTo(500, 1, "swing");
         $("#contents1").fadeOut(500, "swing");
@@ -97,6 +97,20 @@ jQuery(function ($) {
     });
 
     // Main Logo Hover Action.
+    var todayObject = new Date(),
+        nowHours = todayObject.getHours();
+    if(nowHours >= 4 && nowHours < 11) {
+        $('p.greeting').text('Good Morning!');
+    } else if(nowHours >= 11 && nowHours < 14) {
+        $('p.greeting').text('Hello!');
+    } else if(nowHours >= 14 && nowHours < 17) {
+        $('p.greeting').text('How’s Everything!');
+    } else if(nowHours >= 17 && nowHours < 20) {
+        $('p.greeting').text('How’s Your Day Going!');
+    } else if(nowHours >= 20 || nowHours < 4) {
+        $('p.greeting').text('Good Night!');
+    }
+
     $('#mainLogo a').on('mouseover', function () {
         $("h2#kojiyamauchi span").each(function (index) {
             $(this).delay(index * 50).animate({
@@ -168,7 +182,7 @@ jQuery(function ($) {
                 $("#motionSkipBox").fadeIn(100, "linear").delay(150).animate({
                     "right": 0
                 }, 1000, "easeOutExpo");
-                $('#motionSkip').addClass('comp').children('p').addClass('scale');
+                $('#motionSkip').addClass('comp') /*.children('p').addClass('scale')*/ ;
                 $("#contents1").delay(1000).animate({
                     "margin-top": "0px",
                     "opacity": 1
@@ -346,7 +360,7 @@ jQuery(function ($) {
                 $("#motionSkipBox").fadeIn(100, "linear").delay(150).animate({
                     "right": 0
                 }, 1000, "easeOutExpo");
-                $('#motionSkip').addClass('comp').children('p').addClass('scale');
+                $('#motionSkip').addClass('comp') /*.children('p').addClass('scale')*/ ;
                 setTimeout(function () {
                     logoSVGAnimation();
                 }, 1200);

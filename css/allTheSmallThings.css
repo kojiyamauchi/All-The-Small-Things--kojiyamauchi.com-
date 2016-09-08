@@ -319,6 +319,20 @@ header h1#mainLogo a:hover {
   height: 30px;
   line-height: 30px;
 }
+#mainDescription p.greeting {
+  color: #555;
+  font-family: sans-serif;
+  font-size: 1.125em;
+  font-weight: bold;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  left: 0;
+  display: none;
+  width: 300px;
+  height: 30px;
+  line-height: 30px;
+}
 #mainDescription #mainDescriptionBackIMG img {
   position: absolute;
   z-index: 0;

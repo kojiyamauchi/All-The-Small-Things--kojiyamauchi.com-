@@ -7,7 +7,7 @@
   <title>All The Small Things, | www.kojiyamauchi.com</title>
   <meta name="title" content="koji yamauchi" />
   <meta name="viewport" content="width=800">
-  <meta name="description" content="Koji Yamauchi's portfolio site. Live In Tokyo, Japan. I'm Freelance Web Designer, Web Developer and Graphics. Welcome to my canvas. I Make More.">
+  <meta name="description" content="Koji Yamauchi's portfolio site. Live In Tokyo, Japan. I'm Freelance Web Designer and Web Developer. Welcome to my canvas. I Make More.">
   <meta name="keywords" content="graphic,fasion,music,punk,All The Small Things,kojiyamauchi.com,koji yamauchi,kojiyamauchi,kojiyyyyamauchi,ヤマウチコウジ, ヤマウチ コウジ,山内康次,山内 康次,Web Design,Web Designer,Web Development,Web Developer,ウェブデザイン,ウェブデザイナー,ウェブデベロップ,ウェブデベロッパー, グラフィック,絵,音楽,洋服">
   <meta property="og:type" content="website" />
   <meta property="og:url" content="http://kojiyamauchi.com" />
@@ -48,6 +48,7 @@
         <div id="mainDescription">
           <h2 id="kojiyamauchi"><span>w</span><span>w</span><span>w</span><span>.</span><span>k</span><span>o</span><span>j</span><span>i</span><span>y</span><span>a</span><span>m</span><span>a</span><span>u</span><span>c</span><span>h</span><span>i</span><span>.</span><span>c</span><span>o</span><span>m</span></h2>
           <h2 id="myPortfolio">koji yamauchi's portfolio site</h2>
+          <p class="greeting"></p>
           <div id="mainDescriptionBackIMG"> <img src="images/hoveraction1.gif" width="" height="" alt="" /> </div>
         </div>
         <div id="subDescription">
@@ -84,6 +85,7 @@
         <div id="mainDescription">
           <h2 id="kojiyamauchi"><span>w</span><span>w</span><span>w</span><span>.</span><span>k</span><span>o</span><span>j</span><span>i</span><span>y</span><span>a</span><span>m</span><span>a</span><span>u</span><span>c</span><span>h</span><span>i</span><span>.</span><span>c</span><span>o</span><span>m</span></h2>
           <h2 id="myPortfolio">koji yamauchi's portfolio site</h2>
+          <p class="greeting"></p>
           <div id="mainDescriptionBackIMG"> <img src="images/hoveraction1.gif" width="" height="" alt="" /> </div>
         </div>
         <div id="subDescription">
