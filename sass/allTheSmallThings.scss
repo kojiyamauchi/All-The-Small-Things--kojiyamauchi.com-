@@ -81,6 +81,11 @@ body {
     font-family: "Helvetica Neue", Helvetica, arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     font-size: 100%;
     line-height: 1;
+    /* iOS font automatic adjustment none. */
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    /* Smart Phone Smooth Scroll */
+    -webkit-overflow-scrolling: touch;
 }
 
 article,
@@ -336,23 +341,6 @@ header h1#mainLogo {
         }
     }
 
-    p {
-        &.greeting {
-            color: #555;
-            font-family: sans-serif;
-            font-size: 1.125em;
-            font-weight: bold;
-            position: absolute;
-            z-index: 1;
-            right: 0;
-            left: 0;
-            display: none;
-            width: 300px;
-            height: 30px;
-            line-height: 30px;
-        }
-    }
-
     #mainDescriptionBackIMG img {
         position: absolute;
         z-index: 0;
@@ -588,31 +576,6 @@ footer {
             @media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
                 /* Chrome Hack */
                 letter-spacing: 0;
-            }
-
-            &.scale {
-                animation-name: scale;
-                animation-duration: 0.85s;
-                animation-timing-function: ease-out;
-                animation-iteration-count: infinite;
-                animation-delay: 1.25s;
-            }
-
-            &.scaleStop {
-                animation-play-state: paused;
-            }
-            @keyframes scale {
-                0% {
-                    transform: scale(1);
-                }
-
-                50% {
-                    transform: scale(0.95);
-                }
-
-                100% {
-                    transform: scale(1);
-                }
             }
         }
 

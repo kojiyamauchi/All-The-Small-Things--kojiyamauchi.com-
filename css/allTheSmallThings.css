@@ -80,6 +80,11 @@ body {
   font-family: "Helvetica Neue", Helvetica, arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   font-size: 100%;
   line-height: 1;
+  /* iOS font automatic adjustment none. */
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  /* Smart Phone Smooth Scroll */
+  -webkit-overflow-scrolling: touch;
 }
 
 article,
@@ -145,12 +150,10 @@ textarea {
 }
 
 * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   -ms-box-sizing: border-box;
-}
-
-::-moz-selection {
-  background: RGBa(204, 0, 0, 0.1);
 }
 
 ::selection {
@@ -224,9 +227,8 @@ body {
 
 header h1#mainLogo {
   -webkit-transition: -webkit-transform 0.4s;
-  transition: -webkit-transform 0.4s;
+  -ms-transition: -ms-transform 0.4s;
   transition: transform 0.4s;
-  transition: transform 0.4s, -webkit-transform 0.4s;
   /* IE and Old iPhone Introduction Animations Started Property*/
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
@@ -235,9 +237,8 @@ header h1#mainLogo {
 }
 header h1#mainLogo.IEandOldIphoneIntroAnimations {
   -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
+  -ms-transition: -ms-transform 1s;
   transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
   /* IE and Old iPhone Introduction Animations End Property*/
   -webkit-transform: scale(0.85);
   -ms-transform: scale(0.85);
@@ -247,8 +248,11 @@ header h1#mainLogo a {
   display: inline-block;
   margin: 60px 0 0;
   -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s;
   transition: all 0.2s linear;
   -webkit-transform: scale(1);
+  -moz-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
   color: #222;
@@ -259,8 +263,11 @@ header h1#mainLogo a {
 }
 header h1#mainLogo a:hover {
   -webkit-transition: all 0.65s ease-in;
+  -moz-transition: all 0.65s ease-in;
+  -ms-transition: all 0.65s ease-in;
   transition: all 0.65s ease-in;
   -webkit-transform: scale(0.75);
+  -moz-transform: scale(0.75);
   -ms-transform: scale(0.75);
   transform: scale(0.75);
 }
@@ -269,6 +276,7 @@ header h1#mainLogo a:hover {
   /* IE Hack */
   header h1#mainLogo a {
     -webkit-transition: all 0.2s;
+    -ms-transition: all 0.2s;
     transition: all 0.2s;
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
@@ -276,6 +284,7 @@ header h1#mainLogo a:hover {
   }
   header h1#mainLogo a:hover {
     -webkit-transition: all 1s;
+    -ms-transition: all 1s;
     transition: all 1s;
     -webkit-transform: scale(0.85);
     -ms-transform: scale(0.85);
@@ -312,20 +321,6 @@ header h1#mainLogo a:hover {
 #mainDescription h2#myPortfolio {
   position: absolute;
   z-index: 2;
-  right: 0;
-  left: 0;
-  display: none;
-  width: 300px;
-  height: 30px;
-  line-height: 30px;
-}
-#mainDescription p.greeting {
-  color: #555;
-  font-family: sans-serif;
-  font-size: 1.125em;
-  font-weight: bold;
-  position: absolute;
-  z-index: 1;
   right: 0;
   left: 0;
   display: none;
@@ -398,8 +393,11 @@ header h1#mainLogo a:hover {
   height: 40px;
   padding: 0 35px 0 55px;
   -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
   transition: all 0.5s;
   -webkit-transform: scale(1);
+  -moz-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
   color: #555;
@@ -412,8 +410,11 @@ header h1#mainLogo a:hover {
 }
 #socialLink ul li a:hover {
   -webkit-transition: all 0.65s;
+  -moz-transition: all 0.65s;
+  -ms-transition: all 0.65s;
   transition: all 0.65s;
   -webkit-transform: scale(1.45);
+  -moz-transform: scale(1.45);
   -ms-transform: scale(1.45);
   transform: scale(1.45);
 }
@@ -507,18 +508,12 @@ footer p {
   top: -22%;
   left: -60%;
   width: 110px;
-  -webkit-transition: all 0.75s ease 0.25s;
   transition: all 0.75s ease 0.25s;
-  -webkit-transform: translate(0, 10%);
-  -ms-transform: translate(0, 10%);
   transform: translate(0, 10%);
   opacity: 0;
 }
 #motionSkipBox #motionSkip.comp {
-  -webkit-transition: all 0.75s ease 0.25s;
   transition: all 0.75s ease 0.25s;
-  -webkit-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
   transform: translate(0, 0);
   opacity: 1;
 }
@@ -545,50 +540,6 @@ footer p {
     letter-spacing: 0;
   }
 }
-#motionSkipBox #motionSkip p.scale {
-  -webkit-animation-name: scale;
-  animation-name: scale;
-  -webkit-animation-duration: 0.85s;
-  animation-duration: 0.85s;
-  -webkit-animation-timing-function: ease-out;
-  animation-timing-function: ease-out;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-delay: 1.25s;
-  animation-delay: 1.25s;
-}
-#motionSkipBox #motionSkip p.scaleStop {
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-}
-@-webkit-keyframes scale {
-  0% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(0.95);
-    transform: scale(0.95);
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
-@keyframes scale {
-  0% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(0.95);
-    transform: scale(0.95);
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
 #motionSkipBox #motionSkip:before {
   position: absolute;
   z-index: -1;
@@ -613,7 +564,9 @@ footer p {
   margin-left: 0;
   content: "";
   -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
   -ms-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
   transform: rotate(30deg);
   border-radius: 0 30px 0 30px;
   background: #FFF;
@@ -1027,3 +980,5 @@ width: 1366;
 -MacBook 12inch Retina Display-
 width: 1280;
 */
+
+/*# sourceMappingURL=allTheSmallThings.css.map */

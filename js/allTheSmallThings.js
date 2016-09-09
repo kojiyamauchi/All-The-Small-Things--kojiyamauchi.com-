@@ -60,7 +60,6 @@ jQuery(function ($) {
         "right": -motionSkipBoxWidth + "px"
     });
     $("#motionSkipBox").on("click", function () {
-        //$(this).find('p').addClass('scaleStop');
         $("#logoSVG").fadeOut(500, "swing");
         $("header h1#mainLogo").fadeTo(500, 1, "swing");
         $("#contents1").fadeOut(500, "swing");
@@ -111,8 +110,14 @@ jQuery(function ($) {
         $('p.greeting').text('Good Night!');
     }
 
-    $('#mainLogo a').on('mouseover', function () {
-        $("h2#kojiyamauchi span").each(function (index) {
+    var con1 = $('#contents1'),
+        con2 = $('#contents2');
+
+    con1.find('#mainLogo a').on('mouseover', function () {
+        con1.find('#mainDescription').css({
+            'overflow': 'visible'
+        });
+        con1.find("h2#kojiyamauchi span").each(function (index) {
             $(this).delay(index * 50).animate({
                 "top": "-2px"
             }, 50, "linear", function () {
@@ -126,7 +131,25 @@ jQuery(function ($) {
             });
         });
     }).on('mouseout', function () {
-        $('h2#kojiyamauchi span').clearQueue().stop(true).removeAttr('style');
+        con1.find('h2#kojiyamauchi span').clearQueue().stop(true).removeAttr('style');
+    });
+
+    con2.find('#mainLogo a').on('mouseover', function () {
+        con2.find("h2#kojiyamauchi span").each(function (index) {
+            $(this).delay(index * 50).animate({
+                "top": "-2px"
+            }, 50, "linear", function () {
+                $(this).animate({
+                    "top": "2px"
+                }, 100, "linear", function () {
+                    $(this).animate({
+                        "top": "0px"
+                    }, 50, "linear");
+                });
+            });
+        });
+    }).on('mouseout', function () {
+        con2.find('h2#kojiyamauchi span').clearQueue().stop(true).removeAttr('style');
     });
 
     //socialLinkAction!!
@@ -182,7 +205,7 @@ jQuery(function ($) {
                 $("#motionSkipBox").fadeIn(100, "linear").delay(150).animate({
                     "right": 0
                 }, 1000, "easeOutExpo");
-                $('#motionSkip').addClass('comp') /*.children('p').addClass('scale')*/ ;
+                $('#motionSkip').addClass('comp');
                 $("#contents1").delay(1000).animate({
                     "margin-top": "0px",
                     "opacity": 1
@@ -360,7 +383,7 @@ jQuery(function ($) {
                 $("#motionSkipBox").fadeIn(100, "linear").delay(150).animate({
                     "right": 0
                 }, 1000, "easeOutExpo");
-                $('#motionSkip').addClass('comp') /*.children('p').addClass('scale')*/ ;
+                $('#motionSkip').addClass('comp');
                 setTimeout(function () {
                     logoSVGAnimation();
                 }, 1200);

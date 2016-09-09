@@ -31,7 +31,6 @@
   <script type="text/javascript" src="js/jquery-ui.min.js"></script>
   <script type="text/javascript" src="js/jquery.lettering.js"></script>
   <script type="text/javascript" src="js/jquery.textillate.js"></script>
-  <script type="text/javascript" src="js/raphael-min.js"></script>
   <script type="text/javascript" src="js/jquery.lazylinepainter-1.7.0.min.js"></script>
   <script type="text/javascript" src="js/googleAnalytics.js"></script>
   <script type="text/javascript" src="js/allTheSmallThings.js"></script>
@@ -48,7 +47,6 @@
         <div id="mainDescription">
           <h2 id="kojiyamauchi"><span>w</span><span>w</span><span>w</span><span>.</span><span>k</span><span>o</span><span>j</span><span>i</span><span>y</span><span>a</span><span>m</span><span>a</span><span>u</span><span>c</span><span>h</span><span>i</span><span>.</span><span>c</span><span>o</span><span>m</span></h2>
           <h2 id="myPortfolio">koji yamauchi's portfolio site</h2>
-          <p class="greeting"></p>
           <div id="mainDescriptionBackIMG"> <img src="images/hoveraction1.gif" width="" height="" alt="" /> </div>
         </div>
         <div id="subDescription">
@@ -85,7 +83,6 @@
         <div id="mainDescription">
           <h2 id="kojiyamauchi"><span>w</span><span>w</span><span>w</span><span>.</span><span>k</span><span>o</span><span>j</span><span>i</span><span>y</span><span>a</span><span>m</span><span>a</span><span>u</span><span>c</span><span>h</span><span>i</span><span>.</span><span>c</span><span>o</span><span>m</span></h2>
           <h2 id="myPortfolio">koji yamauchi's portfolio site</h2>
-          <p class="greeting"></p>
           <div id="mainDescriptionBackIMG"> <img src="images/hoveraction1.gif" width="" height="" alt="" /> </div>
         </div>
         <div id="subDescription">
@@ -113,6 +110,7 @@
   </div>
   <!----------------------------------------- Case. Motion Skip Button Click Display End. ----------------------------------------->
 
+  <!----------------------------------------- Intro Animation. ----------------------------------------->
   <div id="logoSVG"></div>
   <div id="introWelcome"> <span class="allTheSmallThingsLogoWrap">
       <span class="logoSneaker">
@@ -122,8 +120,7 @@
       </span> <span class="logoMask">
         <img src="images/allTheSmallThingsLogoMask.png">
       </span> </span>
-    <!-- <span class="fa fa-paper-plane-o fa-5x hopping"></span>&nbsp;&nbsp;--><span class="welcomeFont hopping">W</span><span class="welcomeFont hopping">e</span><span class="welcomeFont hopping">l</span><span class="welcomeFont hopping">c</span><span class="welcomeFont hopping">o</span><span class="welcomeFont hopping">m</span><span
-    class="welcomeFont hopping">e</span><span class="welcomeFont hopping">!</span><span class="welcomeFont hopping">!</span><span class="welcomeFont hopping">!</span><!--&nbsp;&nbsp;<span class="fa fa-paper-plane-o fa-5x hopping"></span>--><span class="allTheSmallThingsLogoWrap">
+      <span class="welcomeFont hopping">W</span><span class="welcomeFont hopping">e</span><span class="welcomeFont hopping">l</span><span class="welcomeFont hopping">c</span><span class="welcomeFont hopping">o</span><span class="welcomeFont hopping">m</span><span class="welcomeFont hopping">e</span><span class="welcomeFont hopping">!</span><span class="welcomeFont hopping">!</span><span class="welcomeFont hopping">!</span><span class="allTheSmallThingsLogoWrap">
       <span class="logoSneaker">
         <img src="images/allTheSmallThingsLogoSneaker.png">
       </span> <span class="logoNote hopping">
@@ -141,6 +138,7 @@
     <img src="images/allTheSmallThingsLogoNote.svg" id="motionSkipNote">
     <img src="images/allTheSmallThingsLogoMask.svg" id="motionSkipMask">
   </div>
+<!----------------------------------------- Intro Animation End. ----------------------------------------->
 </body>
 
 </html>
