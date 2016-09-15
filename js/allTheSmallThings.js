@@ -114,9 +114,6 @@ jQuery(function ($) {
         con2 = $('#contents2');
 
     con1.find('#mainLogo a').on('mouseover', function () {
-        con1.find('#mainDescription').css({
-            'overflow': 'visible'
-        });
         con1.find("h2#kojiyamauchi span").each(function (index) {
             $(this).delay(index * 50).animate({
                 "top": "-2px"
