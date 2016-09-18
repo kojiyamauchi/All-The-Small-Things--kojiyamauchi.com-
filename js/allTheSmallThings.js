@@ -3,7 +3,8 @@
 jQuery(function ($) {
 
     // Global Variable & Function.==========================================================================================================================
-    var motionSkipBoxWidth = $("#motionSkipBox").width();
+    var motionSkipBoxWidth = $("#motionSkipBox").width(),
+        ua = navigator.userAgent;
 
     function introWelcomeHopping() {
         $("span.hopping").each(function (index) { // All Animation Time 1700s.
@@ -17,6 +18,11 @@ jQuery(function ($) {
         });
     }
     //======================================================================================================================================================
+
+    // Social Link Mouse Over SP Don't Use.
+    if(ua.indexOf("iPhone") > -1 || ua.indexOf("iPad") > -1 || ua.indexOf("iPod") > -1 || ua.indexOf("Android") > -1) {
+        $('#socialLink ul li a').addClass('sp').removeClass('pc');
+    }
 
     // Intro Welcome, This Site Main Logo Image's Display Random Script.
     var maxNumber = 7, //numberOfLogo.
@@ -171,7 +177,7 @@ jQuery(function ($) {
             shuffle: false,
         }
     });
-    $("#socialLink ul li a").on("mouseover", function () {
+    $("#socialLink ul li a.pc").on("mouseover", function () {
             $social.stop(true).textillate("start");
         }) //.on"mouseover"
         .on("mouseout", function () { //Don't Use...
@@ -180,7 +186,7 @@ jQuery(function ($) {
 
 
     //if IE or ~iPhone4 or WindowsOS FireFox Script.============================================================================================================================
-    if(navigator.userAgent.indexOf("MSIE") > -1 || navigator.userAgent.indexOf("Trident") > -1 || navigator.userAgent.indexOf("iPhone OS 7_1_2") > -1 || navigator.userAgent.indexOf("Windows") > -1 && navigator.userAgent.indexOf("Firefox") > -1 || navigator.userAgent.indexOf("Android") > -1) {
+    if(ua.indexOf("MSIE") > -1 || ua.indexOf("Trident") > -1 || ua.indexOf("iPhone OS 7_1_2") > -1 || ua.indexOf("Windows") > -1 && ua.indexOf("Firefox") > -1 || ua.indexOf("Android") > -1) {
         $("header h1#mainLogo").css({
             "opacity": 1
         });

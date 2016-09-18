@@ -59,12 +59,12 @@
       <section>
         <h4>Social Networks</h4>
         <ul>
-          <li><a href="https://twitter.com/KojiyyyYamauchi" target="_blank" class="introduction">Twitter</a></li>
-          <li><a href="http://www.facebook.com/kojiyyyyamauchi" target="_blank" class="introduction">Facebook</a></li>
-          <li><a href="https://www.linkedin.com/in/kojiyyyyamauchi" target="_blank" class="introduction">LinkedIn</a></li>
-          <li><a href="http://www.behance.net/kojiyamauchi" target="_blank" class="introduction">Behance</a></li>
-          <li><a href="https://github.com/kojiyamauchi/" target="_blank" class="introduction">GitHub</a></li>
-          <li><a href="http://instagram.com/kojiyamauchi" target="_blank" class="introduction">Instagram</a></li>
+          <li><a href="https://twitter.com/KojiyyyYamauchi" target="_blank" class="introduction pc">Twitter</a></li>
+          <li><a href="http://www.facebook.com/kojiyyyyamauchi" target="_blank" class="introduction pc">Facebook</a></li>
+          <li><a href="https://www.linkedin.com/in/kojiyyyyamauchi" target="_blank" class="introduction pc">LinkedIn</a></li>
+          <li><a href="http://www.behance.net/kojiyamauchi" target="_blank" class="introduction pc">Behance</a></li>
+          <li><a href="https://github.com/kojiyamauchi/" target="_blank" class="introduction pc">GitHub</a></li>
+          <li><a href="http://instagram.com/kojiyamauchi" target="_blank" class="introduction pc">Instagram</a></li>
         </ul>
       </section>
     </div>
@@ -95,12 +95,12 @@
       <section>
         <h4>Social Networks</h4>
         <ul>
-          <li><a href="https://twitter.com/KojiyyyYamauchi" target="_blank">Twitter</a> </li>
-          <li><a href="http://www.facebook.com/kojiyyyyamauchi" target="_blank">Facebook</a></li>
-          <li><a href="https://www.linkedin.com/in/kojiyyyyamauchi" target="_blank">LinkedIn</a></li>
-          <li><a href="http://www.behance.net/kojiyamauchi" target="_blank">Behance</a></li>
-          <li><a href="https://github.com/kojiyamauchi/" target="_blank">GitHub</a></li>
-          <li><a href="http://instagram.com/kojiyamauchi" target="_blank">Instagram</a></li>
+          <li><a href="https://twitter.com/KojiyyyYamauchi" target="_blank" class="pc">Twitter</a> </li>
+          <li><a href="http://www.facebook.com/kojiyyyyamauchi" target="_blank" class="pc">Facebook</a></li>
+          <li><a href="https://www.linkedin.com/in/kojiyyyyamauchi" target="_blank" class="pc">LinkedIn</a></li>
+          <li><a href="http://www.behance.net/kojiyamauchi" target="_blank" class="pc">Behance</a></li>
+          <li><a href="https://github.com/kojiyamauchi/" target="_blank" class="pc">GitHub</a></li>
+          <li><a href="http://instagram.com/kojiyamauchi" target="_blank" class="pc">Instagram</a></li>
         </ul>
       </section>
     </div>
