@@ -504,6 +504,19 @@ footer p {
   top: -65px;
   right: 0;
   opacity: 0;
+  letter-spacing: 0;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  #motionSkipBox p#complete {
+    /* Safari Hack */
+    letter-spacing: -0.05em;
+  }
+}
+@media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  #motionSkipBox p#complete {
+    /* Chrome Hack */
+    letter-spacing: 0;
+  }
 }
 #motionSkipBox p#complete.comp {
   -webkit-animation: complete 1s linear 0.25s 1 normal;
