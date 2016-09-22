@@ -62,11 +62,24 @@ jQuery(function ($) {
     }
 
     // Motion Skip Button Click Action!!
+    // Greeting.
+    var todayObject = new Date(),
+        nowHours = todayObject.getHours();
+    if(nowHours >= 4 && nowHours < 11) {
+        $('p#greeting').text('GOOD MORNING!!!');
+    } else if(nowHours >= 11 && nowHours < 14) {
+        $('p#greeting').text('HELLO!!!');
+    } else if(nowHours >= 14 && nowHours < 22) {
+        $('p#greeting').text('COMPLETE!!!');
+    } else if(nowHours >= 22 || nowHours < 4) {
+        $('p#greeting').text('GOOD NIGHT!!!');
+    }
+
     $("#motionSkipBox").css({
         "right": -motionSkipBoxWidth + "px"
     });
     $("#motionSkipBox").on("click", function () {
-        $('p#complete').addClass('comp');
+        $('p#greeting').addClass('comp');
         $("#logoSVG").fadeOut(500, "swing");
         $("header h1#mainLogo").fadeTo(500, 1, "swing");
         $("#contents1").fadeOut(500, "swing");
@@ -103,20 +116,6 @@ jQuery(function ($) {
     });
 
     // Main Logo Hover Action.
-    var todayObject = new Date(),
-        nowHours = todayObject.getHours();
-    if(nowHours >= 4 && nowHours < 11) {
-        $('p.greeting').text('Good Morning!');
-    } else if(nowHours >= 11 && nowHours < 14) {
-        $('p.greeting').text('Hello!');
-    } else if(nowHours >= 14 && nowHours < 17) {
-        $('p.greeting').text('How’s Everything!');
-    } else if(nowHours >= 17 && nowHours < 20) {
-        $('p.greeting').text('How’s Your Day Going!');
-    } else if(nowHours >= 20 || nowHours < 4) {
-        $('p.greeting').text('Good Night!');
-    }
-
     var con1 = $('#contents1'),
         con2 = $('#contents2');
 

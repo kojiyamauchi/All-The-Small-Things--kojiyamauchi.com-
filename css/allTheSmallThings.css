@@ -495,7 +495,7 @@ footer p {
   top: 0;
   left: 0;
 }
-#motionSkipBox p#complete {
+#motionSkipBox p#greeting {
   font-family: 'Patrick Hand', cursive;
   font-weight: bold;
   color: #999999;
@@ -505,24 +505,25 @@ footer p {
   right: 0;
   opacity: 0;
   letter-spacing: 0;
+  white-space: nowrap;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
-  #motionSkipBox p#complete {
+  #motionSkipBox p#greeting {
     /* Safari Hack */
     letter-spacing: -0.05em;
   }
 }
 @media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
-  #motionSkipBox p#complete {
+  #motionSkipBox p#greeting {
     /* Chrome Hack */
     letter-spacing: 0;
   }
 }
-#motionSkipBox p#complete.comp {
-  -webkit-animation: complete 1s linear 0.25s 1 normal;
-  animation: complete 1s linear 0.25s 1 normal;
+#motionSkipBox p#greeting.comp {
+  -webkit-animation: greeting 1s linear 0.25s 1 normal;
+  animation: greeting 1s linear 0.25s 1 normal;
 }
-@-webkit-keyframes complete {
+@-webkit-keyframes greeting {
   0% {
     opacity: 0;
     -webkit-transform: translate(0, 0);
@@ -539,7 +540,7 @@ footer p {
     transform: translate(0, -200%);
   }
 }
-@keyframes complete {
+@keyframes greeting {
   0% {
     opacity: 0;
     -webkit-transform: translate(0, 0);
@@ -780,7 +781,7 @@ Responsive Media Queries
     width: 150px;
     height: 198px;
   }
-  #motionSkipBox p#complete {
+  #motionSkipBox p#greeting {
     top: -97.5px;
   }
   #motionSkipBox #motionSkip {
@@ -878,7 +879,7 @@ Responsive Media Queries
     width: 120px;
     height: 158.4px;
   }
-  #motionSkipBox p#complete {
+  #motionSkipBox p#greeting {
     top: -78px;
   }
   #motionSkipBox #motionSkip {
@@ -981,7 +982,7 @@ Responsive Media Queries
     width: 87.5px;
     height: 115.5px;
   }
-  #motionSkipBox p#complete {
+  #motionSkipBox p#greeting {
     top: -56.875px;
   }
   #motionSkipBox #motionSkip {
