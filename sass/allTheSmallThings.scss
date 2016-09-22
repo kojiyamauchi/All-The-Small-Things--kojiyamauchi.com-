@@ -539,6 +539,39 @@ footer {
         }
     }
 
+    p {
+        &#complete {
+            font-family: 'Patrick Hand', cursive;
+            font-weight: bold;
+            color: #999999;
+            font-size: 1.25em;
+            position: absolute;
+            top: -65px;
+            right: 0;
+            opacity: 0;
+
+            &.comp {
+                animation: complete 1s linear 0.25s 1 normal;
+                @keyframes complete {
+                    0% {
+                        opacity: 0;
+                        transform: translate(0, 0);
+                    }
+
+                    50% {
+                        opacity: 1;
+                        transform: translate(0, -100%);
+                    }
+
+                    100% {
+                        opacity: 0;
+                        transform: translate(0, -200%);
+                    }
+                }
+            }
+        }
+    }
+
     #motionSkip {
         position: absolute;
         top: -22%;
@@ -782,6 +815,12 @@ Responsive Media Queries
         width: 150px;
         height: 132px * 1.5;
 
+        p {
+            &#complete {
+                top: -65px * 1.5;
+            }
+        }
+
         #motionSkip {
             width: 165px;
 
@@ -892,6 +931,12 @@ Responsive Media Queries
     #motionSkipBox {
         width: 120px;
         height: 132px * 1.2;
+
+        p {
+            &#complete {
+                top: -65px * 1.2;
+            }
+        }
 
         #motionSkip {
             width: 132px;
@@ -1008,6 +1053,12 @@ Responsive Media Queries
     #motionSkipBox {
         width: 87.5px;
         height: 132px * 0.875;
+
+        p {
+            &#complete {
+                top: -65px * 0.875;
+            }
+        }
 
         #motionSkip {
             width: 96.25px;

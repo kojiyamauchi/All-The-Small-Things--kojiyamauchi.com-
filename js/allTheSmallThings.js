@@ -66,6 +66,7 @@ jQuery(function ($) {
         "right": -motionSkipBoxWidth + "px"
     });
     $("#motionSkipBox").on("click", function () {
+        $('p#complete').addClass('comp');
         $("#logoSVG").fadeOut(500, "swing");
         $("header h1#mainLogo").fadeTo(500, 1, "swing");
         $("#contents1").fadeOut(500, "swing");

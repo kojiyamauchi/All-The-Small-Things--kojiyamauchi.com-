@@ -137,6 +137,7 @@
     <img src="images/allTheSmallThingsLogoSneaker.svg" id="motionSkipSneaker">
     <img src="images/allTheSmallThingsLogoNote.svg" id="motionSkipNote">
     <img src="images/allTheSmallThingsLogoMask.svg" id="motionSkipMask">
+    <p id="complete">COMPLETE!!!</p>
   </div>
 <!----------------------------------------- Intro Animation End. ----------------------------------------->
 </body>

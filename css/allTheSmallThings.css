@@ -495,6 +495,54 @@ footer p {
   top: 0;
   left: 0;
 }
+#motionSkipBox p#complete {
+  font-family: 'Patrick Hand', cursive;
+  font-weight: bold;
+  color: #999999;
+  font-size: 1.25em;
+  position: absolute;
+  top: -65px;
+  right: 0;
+  opacity: 0;
+}
+#motionSkipBox p#complete.comp {
+  -webkit-animation: complete 1s linear 0.25s 1 normal;
+  animation: complete 1s linear 0.25s 1 normal;
+}
+@-webkit-keyframes complete {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(0, -100%);
+    transform: translate(0, -100%);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(0, -200%);
+    transform: translate(0, -200%);
+  }
+}
+@keyframes complete {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(0, -100%);
+    transform: translate(0, -100%);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(0, -200%);
+    transform: translate(0, -200%);
+  }
+}
 #motionSkipBox #motionSkip {
   position: absolute;
   top: -22%;
@@ -719,6 +767,9 @@ Responsive Media Queries
     width: 150px;
     height: 198px;
   }
+  #motionSkipBox p#complete {
+    top: -97.5px;
+  }
   #motionSkipBox #motionSkip {
     width: 165px;
   }
@@ -813,6 +864,9 @@ Responsive Media Queries
   #motionSkipBox {
     width: 120px;
     height: 158.4px;
+  }
+  #motionSkipBox p#complete {
+    top: -78px;
   }
   #motionSkipBox #motionSkip {
     width: 132px;
@@ -913,6 +967,9 @@ Responsive Media Queries
   #motionSkipBox {
     width: 87.5px;
     height: 115.5px;
+  }
+  #motionSkipBox p#complete {
+    top: -56.875px;
   }
   #motionSkipBox #motionSkip {
     width: 96.25px;
