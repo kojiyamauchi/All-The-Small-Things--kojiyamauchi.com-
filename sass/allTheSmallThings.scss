@@ -331,10 +331,10 @@ header h1#mainLogo {
                     display: inline-block;
 
                     &.comp {
-                        animation: test 0.1s linear 0s infinite normal;
+                        animation: rotateY 0.1s linear 0s infinite normal;
                     }
                 }
-                @keyframes test {
+                @keyframes rotateY {
                     0% {
                         transform: rotateY(0deg);
                     }

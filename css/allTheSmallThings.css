@@ -318,10 +318,10 @@ header h1#mainLogo a:hover {
   display: inline-block;
 }
 #mainDescription h2#kojiyamauchi span#last.comp {
-  -webkit-animation: test 0.1s linear 0s infinite normal;
-  animation: test 0.1s linear 0s infinite normal;
+  -webkit-animation: rotateY 0.1s linear 0s infinite normal;
+  animation: rotateY 0.1s linear 0s infinite normal;
 }
-@-webkit-keyframes test {
+@-webkit-keyframes rotateY {
   0% {
     -webkit-transform: rotateY(0deg);
     transform: rotateY(0deg);
@@ -331,7 +331,7 @@ header h1#mainLogo a:hover {
     transform: rotateY(360deg);
   }
 }
-@keyframes test {
+@keyframes rotateY {
   0% {
     -webkit-transform: rotateY(0deg);
     transform: rotateY(0deg);
