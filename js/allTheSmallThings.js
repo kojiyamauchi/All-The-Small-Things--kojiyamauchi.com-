@@ -120,6 +120,9 @@ jQuery(function ($) {
         con2 = $('#contents2');
 
     con1.find('#mainLogo a').on('mouseover', function () {
+        con1.find('#mainDescription').css({
+            'overflow': 'visible'
+        });
         con1.find("h2#kojiyamauchi span").each(function (index) {
             $(this).delay(index * 50).animate({
                 "top": "-2px"
@@ -132,12 +135,29 @@ jQuery(function ($) {
                     }, 50, "linear");
                 });
             });
+            if(this.id === 'last') {
+                $(this).queue(function () {
+                    $(this).addClass('comp').dequeue();
+                }).animate({
+                    "top": "-40px"
+                }, 200, "linear", function () {
+                    $(this).queue(function () {
+                        $(this).removeClass('comp').dequeue();
+                    }).animate({
+                        "top": "0px"
+                    }, 100, "swing");
+                });
+            }
         });
     }).on('mouseout', function () {
+        con1.find('#mainDescription').removeAttr('style');
         con1.find('h2#kojiyamauchi span').clearQueue().stop(true).removeAttr('style');
     });
 
     con2.find('#mainLogo a').on('mouseover', function () {
+        con2.find('#mainDescription').css({
+            'overflow': 'visible'
+        });
         con2.find("h2#kojiyamauchi span").each(function (index) {
             $(this).delay(index * 50).animate({
                 "top": "-2px"
@@ -150,8 +170,22 @@ jQuery(function ($) {
                     }, 50, "linear");
                 });
             });
+            if(this.id === 'last') {
+                $(this).queue(function () {
+                    $(this).addClass('comp').dequeue();
+                }).animate({
+                    "top": "-40px"
+                }, 200, "linear", function () {
+                    $(this).queue(function () {
+                        $(this).removeClass('comp').dequeue();
+                    }).animate({
+                        "top": "0px"
+                    }, 100, "swing");
+                });
+            }
         });
     }).on('mouseout', function () {
+        con2.find('#mainDescription').removeAttr('style');
         con2.find('h2#kojiyamauchi span').clearQueue().stop(true).removeAttr('style');
     });
 

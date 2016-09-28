@@ -326,6 +326,23 @@ header h1#mainLogo {
                 position: relative;
                 font-size: 1.125rem;
                 font-weight: bold;
+
+                &#last {
+                    display: inline-block;
+
+                    &.comp {
+                        animation: test 0.1s linear 0s infinite normal;
+                    }
+                }
+                @keyframes test {
+                    0% {
+                        transform: rotateY(0deg);
+                    }
+
+                    100% {
+                        transform: rotateY(360deg);
+                    }
+                }
             }
         }
 

@@ -314,6 +314,33 @@ header h1#mainLogo a:hover {
   font-size: 1.125rem;
   font-weight: bold;
 }
+#mainDescription h2#kojiyamauchi span#last {
+  display: inline-block;
+}
+#mainDescription h2#kojiyamauchi span#last.comp {
+  -webkit-animation: test 0.1s linear 0s infinite normal;
+  animation: test 0.1s linear 0s infinite normal;
+}
+@-webkit-keyframes test {
+  0% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+@keyframes test {
+  0% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
 #mainDescription h2#myPortfolio {
   position: absolute;
   z-index: 2;
