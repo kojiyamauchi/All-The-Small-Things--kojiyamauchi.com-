@@ -3,7 +3,7 @@
 jQuery(function ($) {
 
     // Global Variable & Function.==========================================================================================================================
-    const motionSkipBoxWidth = $("#motionSkipBox").width(),
+    var motionSkipBoxWidth = $("#motionSkipBox").width(),
         ua = navigator.userAgent;
 
     function introWelcomeHopping() {
@@ -25,7 +25,7 @@ jQuery(function ($) {
     }
 
     // Intro Welcome, This Site Main Logo Image's Display Random Script.
-    const maxNumber = 7, //numberOfLogo.
+    var maxNumber = 7, //numberOfLogo.
         randomNumber = Math.floor(Math.random() * (maxNumber)) + 1;
     $(".logoSneaker").children("img").attr("src", "images/allTheSmallThingsLogoSneaker" + randomNumber + ".png");
     $(".logoNote").children("img").attr("src", "images/allTheSmallThingsLogoNote" + randomNumber + ".png");
@@ -63,7 +63,7 @@ jQuery(function ($) {
 
     // Motion Skip Button Click Action!!
     // Greeting.
-    const todayObject = new Date(),
+    var todayObject = new Date(),
         nowHours = todayObject.getHours();
     if(nowHours >= 4 && nowHours < 11) {
         $('p#greeting').text('GOOD MORNING!!!');
@@ -116,7 +116,7 @@ jQuery(function ($) {
     });
 
     // Main Logo Hover Action.
-    const con1 = $('#contents1'),
+    var con1 = $('#contents1'),
         con2 = $('#contents2');
 
     con1.find('#mainLogo a').on('mouseover', function () {
@@ -190,7 +190,7 @@ jQuery(function ($) {
     });
 
     //socialLinkAction!!
-    const $social = $("#socialLink h4").textillate({
+    var $social = $("#socialLink h4").textillate({
         loop: false,
         autoStart: false,
         in: {
@@ -251,7 +251,7 @@ jQuery(function ($) {
                         $(this).delay(1750).removeClass("IEandOldIphoneIntroAnimations", function () {
                             $("#contents1 #kojiyamauchi").delay(500).fadeOut(1000, "swing", function () {
                                 $("#contents1 #myPortfolio").show("drop", "", 500, function () {
-                                    const mainDescriptionBackIMGWidth = $("#contents1 #mainDescription").width(),
+                                    var mainDescriptionBackIMGWidth = $("#contents1 #mainDescription").width(),
                                         subDescriptionBackIMGWidth = $("#contents1 #subDescription").width();
                                     $("#contents1 #mainDescriptionBackIMG img").animate({
                                         "opacity": 1,
@@ -314,7 +314,7 @@ jQuery(function ($) {
 
         //if Safari or Chrome or FireFox or iPhone5~ Script.===================================================================================================
         // LogoSVG
-        const pathObj = {
+        var pathObj = {
             "logoSVG": {
                 "strokepath": [{
                     "path": "M4.7,118.7c1.8-11.6,3.7-23.3,8.1-34.2c1.3-3.2,2.8-6.4,4.3-9.5c1.2-2.6,2.5-5.1,3.7-7.7c0.5-1,0.9-1.9,1.4-2.9  c6.8-14,13.6-28.2,16.3-43.5c0,10.3,0.6,21.6,1.7,31.8c1.3,11.5,3.4,22.9,7.4,33.7c0.9,2.3,1.8,4.6,2.7,6.8  c3.7,9,7.5,18.1,11.2,27.1",
@@ -466,7 +466,7 @@ jQuery(function ($) {
                 }, 4100, "easeOutExpo", function () {
                     $("#contents1 #kojiyamauchi").delay(4400).fadeOut(1000, "swing", function () {
                         $("#contents1 #myPortfolio").show("drop", "", 500, function () {
-                            const mainDescriptionBackIMGWidth = $("#contents1 #mainDescription").width(),
+                            var mainDescriptionBackIMGWidth = $("#contents1 #mainDescription").width(),
                                 subDescriptionBackIMGWidth = $("#contents1 #subDescription").width();
                             $("#contents1 #mainDescriptionBackIMG img").animate({
                                 "opacity": 1,
