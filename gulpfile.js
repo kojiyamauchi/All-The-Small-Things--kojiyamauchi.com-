@@ -66,6 +66,7 @@ gulp.task('cssmin', function () {
         .pipe(gulp.dest('css/'));
 });
 
+// JS File Compression.
 gulp.task('jsmin', function () {
     gulp.src('js/allTheSmallThings.js')
         .pipe(jsmin({
