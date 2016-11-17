@@ -8,6 +8,8 @@ var gulp = require("gulp"), // call gulp.
     noCompressionImagesFold = (["noCompressionImages/*.jpg", "noCompressionImages/*.jpeg", "noCompressionImages/*.png", "noCompressionImages/*.gif", "noCompressionImages/*.svg"]), // no compression images fold.
     compressionImageFold = "images/", // finish compression images fold.
     autoprefixer = require("gulp-autoprefixer"), // add vendor prefix in CSS automatically.
+    cssmin = require('gulp-cssmin'), // CSS File Compression.
+    jsmin = require('gulp-uglify'), // JS File Compression.
     rename = require("gulp-rename"), // File Rename PlugIn.
     del = require("del"), // File Delete, Not Gulp PlugIn.
     ftp = require("vinyl-ftp"), // ftp plugin.
@@ -46,12 +48,33 @@ gulp.task("compressionImages", function () {
 
 // add vendor prefix automatically.
 gulp.task("autoprefixer", function () {
-    return gulp.src("css/allTheSmallThings.css")
+    gulp.src("css/allTheSmallThings.css")
         .pipe(autoprefixer({
             browsers: ["last 2 versions", "ie >= 9", "Android >= 4", "ios_saf >= 8"],
             cascade: false
         }))
         .pipe(gulp.dest("css/"));
+});
+
+// CSS File Compression.
+gulp.task('cssmin', function () {
+    gulp.src('css/allTheSmallThings.css')
+        .pipe(cssmin())
+        .pipe(rename({
+            suffix: '.min'
+        }))
+        .pipe(gulp.dest('css/'));
+});
+
+gulp.task('jsmin', function () {
+    gulp.src('js/allTheSmallThings.js')
+        .pipe(jsmin({
+            preserveComments: 'some'
+        }))
+        .pipe(rename({
+            suffix: '.min'
+        }))
+        .pipe(gulp.dest('js/'));
 });
 
 // HTML File Rename PHP File. Setting at The Work Start.
@@ -110,6 +133,8 @@ gulp.task("default", ["browserSync"], function () { // first task, local server 
     gulp.watch(noCompressionImagesFold, ["compressionImages"]); // watching noCompressionImages fold changed images, compression images.
     gulp.watch("sass/*.scss", ["compass"]); // watching sass file save's auto compile, using compass.
     gulp.watch("css/*.css", ["autoprefixer"]); // watching change's CSS flie. add vendor prefix automatically.
+    gulp.watch("css/*.css", ["cssmin"]); // watching change's CSS flie, File Compression.
+    gulp.watch("js/*.js", ["jsmin"]); // watching change's JS flie, File Compression.
     //gulp.watch("**/*", ["rename"]); // watching change's HTML flie. Rename PHP file.
     //gulp.watch("**/*", ["delete"]); // watching rename PHP file. delet HTML file.
     //gulp.watch(upLoadFile, ["ftpUpLoad"]); // watching file save's auto ftp upload.
