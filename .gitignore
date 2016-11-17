@@ -1,8 +1,9 @@
-gulpfile.js
 .ftpconfig
 colorOfLife/
+gulpfile.js
 main/
-portfolioPDF/
+privatePortfolio/
 studySpace/
 works/
+jsSample/
 .DS_Store
