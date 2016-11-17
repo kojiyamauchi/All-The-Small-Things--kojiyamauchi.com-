@@ -26,14 +26,14 @@
   <meta name="theme-color" content="#dbdbdb">
   <link rel="stylesheet" type="text/css" href="css/animate.css" />
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="css/allTheSmallThings.css">
+  <link rel="stylesheet" type="text/css" href="css/allTheSmallThings.min.css">
   <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
   <script type="text/javascript" src="js/jquery-ui.min.js"></script>
   <script type="text/javascript" src="js/jquery.lettering.js"></script>
   <script type="text/javascript" src="js/jquery.textillate.js"></script>
   <script type="text/javascript" src="js/jquery.lazylinepainter-1.7.0.min.js"></script>
   <script type="text/javascript" src="js/googleAnalytics.js"></script>
-  <script type="text/javascript" src="js/allTheSmallThings.js"></script>
+  <script type="text/javascript" src="js/allTheSmallThings.min.js"></script>
 </head>
 
 <body>
@@ -46,7 +46,7 @@
       <section>
         <div id="mainDescription">
           <h2 id="kojiyamauchi"><span>w</span><span>w</span><span>w</span><span>.</span><span>k</span><span>o</span><span>j</span><span>i</span><span>y</span><span>a</span><span>m</span><span>a</span><span>u</span><span>c</span><span>h</span><span>i</span><span>.</span><span>c</span><span>o</span><span id="last">m</span></h2>
-          <h2 id="myPortfolio">koji yamauchi's portfolio site</h2>
+          <h2 id="myPortfolio"><span>k</span><span>o</span><span>j</span><span>i</span><span> </span><span>y</span><span>a</span><span>m</span><span>a</span><span>u</span><span>c</span><span>h</span><span>i</span><span>'</span><span>s</span><span> </span><span>p</span><span>o</span><span>r</span><span>t</span><span>f</span><span>o</span><span>l</span><span>i</span><span>o</span><span> </span><span>s</span><span>i</span><span>t</span><span>e</span></h2>
           <div id="mainDescriptionBackIMG"> <img src="images/hoveraction1.gif" width="" height="" alt="" /> </div>
         </div>
         <div id="subDescription">
@@ -82,7 +82,7 @@
       <section>
         <div id="mainDescription">
           <h2 id="kojiyamauchi"><span>w</span><span>w</span><span>w</span><span>.</span><span>k</span><span>o</span><span>j</span><span>i</span><span>y</span><span>a</span><span>m</span><span>a</span><span>u</span><span>c</span><span>h</span><span>i</span><span>.</span><span>c</span><span>o</span><span id="last">m</span></h2>
-          <h2 id="myPortfolio">koji yamauchi's portfolio site</h2>
+          <h2 id="myPortfolio"><span>k</span><span>o</span><span>j</span><span>i</span><span> </span><span>y</span><span>a</span><span>m</span><span>a</span><span>u</span><span>c</span><span>h</span><span>i</span><span>'</span><span>s</span><span> </span><span>p</span><span>o</span><span>r</span><span>t</span><span>f</span><span>o</span><span>l</span><span>i</span><span>o</span><span> </span><span>s</span><span>i</span><span>t</span><span>e</span></h2>
           <div id="mainDescriptionBackIMG"> <img src="images/hoveraction1.gif" width="" height="" alt="" /> </div>
         </div>
         <div id="subDescription">
