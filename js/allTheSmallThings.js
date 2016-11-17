@@ -120,9 +120,6 @@ jQuery(function ($) {
         con2 = $('#contents2');
 
     con1.find('#mainLogo a').on('mouseover', function () {
-        con1.find('#mainDescription').css({
-            'overflow': 'visible'
-        });
         con1.find("h2#kojiyamauchi span").each(function (index) {
             $(this).delay(index * 50).animate({
                 "top": "-2px"
@@ -150,14 +147,10 @@ jQuery(function ($) {
             }
         });
     }).on('mouseout', function () {
-        con1.find('#mainDescription').removeAttr('style');
         con1.find('h2#kojiyamauchi span').clearQueue().stop(true).removeAttr('style');
     });
 
     con2.find('#mainLogo a').on('mouseover', function () {
-        con2.find('#mainDescription').css({
-            'overflow': 'visible'
-        });
         con2.find("h2#kojiyamauchi span").each(function (index) {
             $(this).delay(index * 50).animate({
                 "top": "-2px"
@@ -185,7 +178,6 @@ jQuery(function ($) {
             }
         });
     }).on('mouseout', function () {
-        con2.find('#mainDescription').removeAttr('style');
         con2.find('h2#kojiyamauchi span').clearQueue().stop(true).removeAttr('style');
     });
 
@@ -226,6 +218,12 @@ jQuery(function ($) {
         });
         $("#logoSVG").css({
             "display": "none"
+        });
+        $('#contents1 #myPortfolio').css({
+            'display': 'none',
+        }).children('span').css({
+            'top': '0px',
+            'opacity': 1
         });
 
         //introduction!!
@@ -464,60 +462,79 @@ jQuery(function ($) {
                     "margin-top": "0px",
                     "opacity": 1
                 }, 4100, "easeOutExpo", function () {
-                    $("#contents1 #kojiyamauchi").delay(4400).fadeOut(1000, "swing", function () {
-                        $("#contents1 #myPortfolio").show("drop", "", 500, function () {
-                            var mainDescriptionBackIMGWidth = $("#contents1 #mainDescription").width(),
-                                subDescriptionBackIMGWidth = $("#contents1 #subDescription").width();
-                            $("#contents1 #mainDescriptionBackIMG img").animate({
-                                "opacity": 1,
-                                "width": mainDescriptionBackIMGWidth + "px"
-                            }, 2000, "easeInQuart", function () {
-                                $("#contents1 #subDescriptionBackIMG img").animate({
-                                    "opacity": 1,
-                                    "width": subDescriptionBackIMGWidth + "px"
-                                }, 2000, "easeInQuart", function () {
-                                    $("#contents1 #mainDescriptionBackIMG img, #contents1 #subDescriptionBackIMG img").delay(2000).fadeTo(1000, 0);
-                                    $("#logoSVG").delay(2000).fadeOut(1500);
-                                    $("header h1#mainLogo").delay(2000).fadeTo(1500, 1);
-                                    $("#contents1 #myPortfolio").delay(2000).fadeOut(1000, function () {
-                                        $("#contents1 #kojiyamauchi").show("drop", "", 500, function () {
-                                            setTimeout(function () {
-                                                $("a").removeClass("introduction");
-                                            }, 2000);
-                                            $("#motionSkipBox").delay(2000).animate({
-                                                "right": -motionSkipBoxWidth + "px"
-                                            }, 1000, "easeInExpo", function () {
-                                                $(this).hide();
-                                            });
-                                            setTimeout(function () {
-                                                $('#motionSkip').removeClass('comp');
-                                            }, 2000);
-                                            //copyrightAction!!
-                                            $("footer p").textillate({
-                                                loop: true,
-                                                minDisplayTime: 2000,
-                                                initialDelay: 2000,
-                                                autoStart: true,
-                                                in: {
-                                                    effect: "flash",
-                                                    delayScale: 1.5,
-                                                    delay: 100,
-                                                    sequence: true,
-                                                },
-                                                out: {
-                                                    effect: "flash",
-                                                    delayScale: 1.0,
-                                                    delay: 150,
-                                                    sequence: true,
-                                                }
-                                            });
-                                            //copyrightActionEnd
-                                        });
-                                    });
+                    setTimeout(function () {
+                        $('#contents1 #kojiyamauchi span').each(function (index, callBack) {
+                            $(this).delay(index * 45).animate({
+                                'top': '30px',
+                                'opacity': 0
+                            }, 750, 'easeInExpo');
+                            var callBack = setTimeout(function () {
+                                $('#contents1 #myPortfolio span').each(function (index) {
+                                    $(this).delay(index * 45).animate({
+                                        'top': '0px',
+                                        'opacity': 1
+                                    }, 750, 'easeOutExpo');
                                 });
+                            }, 2000);
+                        });
+                        var mainDescriptionBackIMGWidth = $("#contents1 #mainDescription").width(),
+                            subDescriptionBackIMGWidth = $("#contents1 #subDescription").width();
+                        $("#contents1 #mainDescriptionBackIMG img").delay(3000).animate({
+                            "opacity": 1,
+                            "width": mainDescriptionBackIMGWidth + "px"
+                        }, 2000, "easeInQuart", function () {
+                            $("#contents1 #subDescriptionBackIMG img").animate({
+                                "opacity": 1,
+                                "width": subDescriptionBackIMGWidth + "px"
+                            }, 2000, "easeInQuart", function () {
+                                $("#contents1 #mainDescriptionBackIMG img, #contents1 #subDescriptionBackIMG img").delay(2000).fadeTo(1000, 0);
+                                $("#logoSVG").delay(2000).fadeOut(1750);
+                                $("header h1#mainLogo").delay(2000).fadeTo(1750, 1);
+                                setTimeout(function () {
+                                    $('#contents1 #myPortfolio span').clearQueue().fadeOut(1000);
+                                    setTimeout(function () {
+                                        $('#contents1 #kojiyamauchi span').each(function (index) {
+                                            $(this).delay(index * 45).animate({
+                                                'top': '0px',
+                                                'opacity': 1
+                                            }, 750, 'easeOutExpo');
+                                        });
+                                    }, 750);
+                                }, 2000);
+                                setTimeout(function () {
+                                    $("a").removeClass("introduction");
+                                }, 5000);
+                                $("#motionSkipBox").delay(5000).animate({
+                                    "right": -motionSkipBoxWidth + "px"
+                                }, 1000, "easeInExpo", function () {
+                                    $(this).hide();
+                                });
+                                setTimeout(function () {
+                                    $('#motionSkip').removeClass('comp');
+                                }, 5000);
+                                //copyrightAction!!
+                                $("footer p").textillate({
+                                    loop: true,
+                                    minDisplayTime: 2000,
+                                    initialDelay: 5500,
+                                    autoStart: true,
+                                    in: {
+                                        effect: "flash",
+                                        delayScale: 1.5,
+                                        delay: 100,
+                                        sequence: true,
+                                    },
+                                    out: {
+                                        effect: "flash",
+                                        delayScale: 1.0,
+                                        delay: 150,
+                                        sequence: true,
+                                    }
+                                });
+                                //copyrightActionEnd
                             });
                         });
-                    });
+                    }, 4100);
                 });
             });
         });
@@ -525,6 +542,6 @@ jQuery(function ($) {
     }
     //if Safari or Chrome or FireFox or iPhone5~ Script End.===============================================================================================
 
-    console.log('Life Goes On!!!');
+    console.log('Life Goes On!!');
 
 }); //finished. Good Job!!!
