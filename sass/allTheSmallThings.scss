@@ -302,7 +302,7 @@ header h1#mainLogo {
 
 #mainDescription {
     position: relative;
-    width: 300px;
+    width: 320px;
     height: 30px;
     margin: 70px auto 0;
 
@@ -315,13 +315,13 @@ header h1#mainLogo {
             z-index: 3;
             right: 0;
             left: 0;
-            width: 300px;
+            width: 320px;
             height: 30px;
             line-height: 30px;
 
             span {
                 position: relative;
-                font-size: 1.125rem;
+                font-size: 1.125em;
                 font-weight: bold;
 
                 &#last {
@@ -348,7 +348,7 @@ header h1#mainLogo {
             z-index: 2;
             right: 0;
             left: 0;
-            width: 300px;
+            width: 320px;
             height: 30px;
             line-height: 30px;
 
@@ -356,7 +356,7 @@ header h1#mainLogo {
                 position: relative;
                 top: -30px;
                 opacity: 0;
-                font-size: 1.125rem;
+                font-size: 1.125em;
                 font-weight: bold;
             }
         }
@@ -781,14 +781,14 @@ Responsive Media Queries
     }
 
     #mainDescription {
-        width: 450px;
+        width: 320px * 1.5;
         height: 45px;
         margin: 105px auto 0;
 
         h2 {
             &#kojiyamauchi,
             &#myPortfolio {
-                width: 450px;
+                width: 320px * 1.5;
                 height: 45px;
                 line-height: 45px;
             }
@@ -898,14 +898,14 @@ Responsive Media Queries
     }
 
     #mainDescription {
-        width: 360px;
+        width: 320px * 1.2;
         height: 36px;
         margin: 84px auto 0;
 
         h2 {
             &#kojiyamauchi,
             &#myPortfolio {
-                width: 360px;
+                width: 320px * 1.2;
                 height: 36px;
                 line-height: 36px;
             }
@@ -1020,14 +1020,14 @@ Responsive Media Queries
     }
 
     #mainDescription {
-        width: 262.5px;
+        width: 320px * 0.875;
         height: 26.25px;
         margin: 61.25px auto 0;
 
         h2 {
             &#kojiyamauchi,
             &#myPortfolio {
-                width: 262.5px;
+                width: 320px * 0.875;
                 height: 26.25px;
                 line-height: 26.25px;
             }
