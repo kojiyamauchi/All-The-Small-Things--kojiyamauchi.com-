@@ -883,10 +883,20 @@ Responsive Media Queries
                     height: 60px;
                     padding: 0 52.5px 0 82.5px;
                     line-height: 60px;
+
+                    &::before {
+                        width: 40px * 1.5;
+                        height: 40px * 1.5;
+                        margin: 0 0 0 -55px * 1.5;
+                    }
                 }
 
                 &:nth-child(6) a {
                     padding: 0 0 0 75px;
+
+                    &::before {
+                        margin: 0 0 0 -50px * 1.5;
+                    }
                 }
             }
         }
@@ -1000,10 +1010,20 @@ Responsive Media Queries
                     height: 48px;
                     padding: 0 42px 0 66px;
                     line-height: 48px;
+
+                    &::before {
+                        width: 40px * 1.2;
+                        height: 40px * 1.2;
+                        margin: 0 0 0 -55px * 1.2;
+                    }
                 }
 
                 &:nth-child(6) a {
                     padding: 0 0 0 60px;
+
+                    &::before {
+                        margin: 0 0 0 -50px * 1.2;
+                    }
                 }
             }
         }
@@ -1122,10 +1142,20 @@ Responsive Media Queries
                     height: 35px;
                     padding: 0 30.625px 0 48.125px;
                     line-height: 35px;
+
+                    &::before {
+                        width: 40px * 0.875;
+                        height: 40px * 0.875;
+                        margin: 0 0 0 -55px * 0.875;
+                    }
                 }
 
                 &:nth-child(6) a {
                     padding: 0 0 0 43.75px;
+
+                    &::before {
+                        margin: 0 0 0 -50px * 0.875;
+                    }
                 }
             }
         }
