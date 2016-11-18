@@ -150,10 +150,12 @@ textarea {
 }
 
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   -ms-box-sizing: border-box;
+}
+
+::-moz-selection {
+  background: RGBa(204, 0, 0, 0.1);
 }
 
 ::selection {
@@ -227,8 +229,9 @@ body {
 
 header h1#mainLogo {
   -webkit-transition: -webkit-transform 0.4s;
-  -ms-transition: -ms-transform 0.4s;
+  transition: -webkit-transform 0.4s;
   transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
   /* IE and Old iPhone Introduction Animations Started Property*/
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
@@ -237,8 +240,9 @@ header h1#mainLogo {
 }
 header h1#mainLogo.IEandOldIphoneIntroAnimations {
   -webkit-transition: -webkit-transform 1s;
-  -ms-transition: -ms-transform 1s;
+  transition: -webkit-transform 1s;
   transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
   /* IE and Old iPhone Introduction Animations End Property*/
   -webkit-transform: scale(0.85);
   -ms-transform: scale(0.85);
@@ -248,11 +252,8 @@ header h1#mainLogo a {
   display: inline-block;
   margin: 60px 0 0;
   -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -ms-transition: all 0.2s;
   transition: all 0.2s linear;
   -webkit-transform: scale(1);
-  -moz-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
   color: #222;
@@ -263,11 +264,8 @@ header h1#mainLogo a {
 }
 header h1#mainLogo a:hover {
   -webkit-transition: all 0.65s ease-in;
-  -moz-transition: all 0.65s ease-in;
-  -ms-transition: all 0.65s ease-in;
   transition: all 0.65s ease-in;
   -webkit-transform: scale(0.75);
-  -moz-transform: scale(0.75);
   -ms-transform: scale(0.75);
   transform: scale(0.75);
 }
@@ -276,7 +274,6 @@ header h1#mainLogo a:hover {
   /* IE Hack */
   header h1#mainLogo a {
     -webkit-transition: all 0.2s;
-    -ms-transition: all 0.2s;
     transition: all 0.2s;
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
@@ -284,7 +281,6 @@ header h1#mainLogo a:hover {
   }
   header h1#mainLogo a:hover {
     -webkit-transition: all 1s;
-    -ms-transition: all 1s;
     transition: all 1s;
     -webkit-transform: scale(0.85);
     -ms-transform: scale(0.85);
@@ -319,13 +315,26 @@ header h1#mainLogo a:hover {
   display: inline-block;
 }
 #mainDescription h2#kojiyamauchi span#last.comp {
+  -webkit-animation: rotateY 0.1s linear 0s infinite normal;
   animation: rotateY 0.1s linear 0s infinite normal;
 }
-@keyframes rotateY {
+@-webkit-keyframes rotateY {
   0% {
+    -webkit-transform: rotateY(0deg);
     transform: rotateY(0deg);
   }
   100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+@keyframes rotateY {
+  0% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
     transform: rotateY(360deg);
   }
 }
@@ -416,33 +425,104 @@ header h1#mainLogo a:hover {
   font-size: 0.875em;
   font-weight: bold;
   line-height: 40px;
+  position: relative;
+}
+#socialLink ul li a::before {
+  width: 40px;
+  height: 40px;
+  content: "";
+  position: absolute;
+  margin: 0 0 0 -55px;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 0;
 }
 #socialLink ul li a.pc {
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
   transform: scale(1);
 }
 #socialLink ul li a.pc:hover {
+  -webkit-transition: all 0.65s;
   transition: all 0.65s;
+  -webkit-transform: scale(1.45);
+  -ms-transform: scale(1.45);
   transform: scale(1.45);
+}
+#socialLink ul li a.pc:hover::before {
+  -webkit-animation: fireworks 0.65s ease-out 0s 1 normal;
+  animation: fireworks 0.65s ease-out 0s 1 normal;
+}
+@-webkit-keyframes fireworks {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(2.5);
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+@keyframes fireworks {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(2.5);
+    transform: scale(2.5);
+    opacity: 0;
+  }
 }
 #socialLink ul li:nth-child(1) a {
   background-image: url("../images/iconTwitter.svg");
 }
+#socialLink ul li:nth-child(1) a::before {
+  background: url("../images/twitterFireWorks.svg") no-repeat;
+}
 #socialLink ul li:nth-child(2) a {
   background-image: url("../images/iconFaceBook.svg");
+}
+#socialLink ul li:nth-child(2) a::before {
+  background: url("../images/faceBookFireWorks.svg") no-repeat;
 }
 #socialLink ul li:nth-child(3) a {
   background-image: url("../images/iconLinkedIn.svg");
 }
+#socialLink ul li:nth-child(3) a::before {
+  background: url("../images/linkedInFireWorks.svg") no-repeat;
+}
 #socialLink ul li:nth-child(4) a {
   background-image: url("../images/iconBehance.svg");
+}
+#socialLink ul li:nth-child(4) a::before {
+  background: url("../images/behanceFireWorks.svg") no-repeat;
 }
 #socialLink ul li:nth-child(5) a {
   background-image: url("../images/iconGitHub.svg");
 }
+#socialLink ul li:nth-child(5) a::before {
+  background: url("../images/gitHubFireWorks.svg") no-repeat;
+}
 #socialLink ul li:nth-child(6) a {
   padding: 0 0 0 50px;
   background-image: url("../images/iconInstagram.svg");
+}
+#socialLink ul li:nth-child(6) a::before {
+  margin: 0 0 0 -50px;
+  background: url("../images/instagramFireWorks.svg") no-repeat;
 }
 
 @media all and (-ms-high-contrast: none) {
@@ -535,18 +615,39 @@ footer p {
   }
 }
 #motionSkipBox p#greeting.comp {
+  -webkit-animation: greeting 1s linear 0.25s 1 normal;
   animation: greeting 1s linear 0.25s 1 normal;
 }
-@keyframes greeting {
+@-webkit-keyframes greeting {
   0% {
+    -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
     opacity: 0;
   }
   50% {
+    -webkit-transform: translate(0, -100%);
     transform: translate(0, -100%);
     opacity: 1;
   }
   100% {
+    -webkit-transform: translate(0, -200%);
+    transform: translate(0, -200%);
+    opacity: 0;
+  }
+}
+@keyframes greeting {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translate(0, -100%);
+    transform: translate(0, -100%);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(0, -200%);
     transform: translate(0, -200%);
     opacity: 0;
   }
@@ -556,12 +657,18 @@ footer p {
   top: -22%;
   left: -60%;
   width: 110px;
+  -webkit-transition: all 0.75s ease 0.25s;
   transition: all 0.75s ease 0.25s;
+  -webkit-transform: translate(0, 10%);
+  -ms-transform: translate(0, 10%);
   transform: translate(0, 10%);
   opacity: 0;
 }
 #motionSkipBox #motionSkip.comp {
+  -webkit-transition: all 0.75s ease 0.25s;
   transition: all 0.75s ease 0.25s;
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
   transform: translate(0, 0);
   opacity: 1;
 }
@@ -612,9 +719,7 @@ footer p {
   margin-left: 0;
   content: "";
   -webkit-transform: rotate(30deg);
-  -moz-transform: rotate(30deg);
   -ms-transform: rotate(30deg);
-  -o-transform: rotate(30deg);
   transform: rotate(30deg);
   border-radius: 0 30px 0 30px;
   background: #FFF;
@@ -1037,5 +1142,3 @@ width: 1366;
 -MacBook 12inch Retina Display-
 width: 1280;
 */
-
-/*# sourceMappingURL=allTheSmallThings.css.map */

@@ -438,6 +438,17 @@ header h1#mainLogo {
                 font-size: 0.875em;
                 font-weight: bold;
                 line-height: 40px;
+                position: relative;
+
+                &::before {
+                    width: 40px;
+                    height: 40px;
+                    content: "";
+                    position: absolute;
+                    margin: 0 0 0 -55px;
+                    transform: scale(1);
+                    opacity: 0;
+                }
 
                 &.pc {
                     transition: all 0.5s;
@@ -446,6 +457,25 @@ header h1#mainLogo {
                     &:hover {
                         transition: all 0.65s;
                         transform: scale(1.45);
+
+                        &::before {
+                            animation: fireworks 0.65s ease-out 0s 1 normal;
+                            @keyframes fireworks {
+                                0% {
+                                    transform: scale(1);
+                                    opacity: 0;
+                                }
+
+                                50% {
+                                    opacity: 1;
+                                }
+
+                                100% {
+                                    transform: scale(2.5);
+                                    opacity: 0;
+                                }
+                            }
+                        }
                     }
                 }
 
@@ -456,27 +486,52 @@ header h1#mainLogo {
 
             &:nth-child(1) a {
                 background-image: url("../images/iconTwitter.svg");
+
+                &::before {
+                    background: url("../images/twitterFireWorks.svg") no-repeat;
+                }
             }
 
             &:nth-child(2) a {
                 background-image: url("../images/iconFaceBook.svg");
+
+                &::before {
+                    background: url("../images/faceBookFireWorks.svg") no-repeat;
+                }
             }
 
             &:nth-child(3) a {
                 background-image: url("../images/iconLinkedIn.svg");
+
+                &::before {
+                    background: url("../images/linkedInFireWorks.svg") no-repeat;
+                }
             }
 
             &:nth-child(4) a {
                 background-image: url("../images/iconBehance.svg");
+
+                &::before {
+                    background: url("../images/behanceFireWorks.svg") no-repeat;
+                }
             }
 
             &:nth-child(5) a {
                 background-image: url("../images/iconGitHub.svg");
+
+                &::before {
+                    background: url("../images/gitHubFireWorks.svg") no-repeat;
+                }
             }
 
             &:nth-child(6) a {
                 padding: 0 0 0 50px;
                 background-image: url("../images/iconInstagram.svg");
+
+                &::before {
+                    margin: 0 0 0 -50px;
+                    background: url("../images/instagramFireWorks.svg") no-repeat;
+                }
             }
         }
     }
