@@ -509,6 +509,7 @@ jQuery(function ($) {
                                 }, 1900);
                                 setTimeout(function () {
                                     $("a").removeClass("introduction");
+                                    $('#contents1 #kojiyamauchi span').clearQueue();
                                 }, 6000);
                                 $("#motionSkipBox").delay(6000).animate({
                                     "right": -motionSkipBoxWidth + "px"
