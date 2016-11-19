@@ -349,7 +349,7 @@ header h1#mainLogo a:hover {
 }
 #mainDescription h2#myPortfolio span {
   position: relative;
-  top: -30px;
+  top: 30px;
   opacity: 0;
   font-size: 1.125em;
   font-weight: bold;

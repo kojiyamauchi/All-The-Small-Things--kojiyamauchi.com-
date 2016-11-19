@@ -455,7 +455,7 @@ jQuery(function ($) {
                     }, 1000, "easeInQuart", function () {
                         $(this).animate({
                             "stroke-width": 10 + "px"
-                        }, 1000, "easeOutBounce");
+                        }, 1500, "easeOutBounce");
                     });
                 }, 8200);
                 $("#contents1").delay(1000).animate({
@@ -490,33 +490,39 @@ jQuery(function ($) {
                                 $("#contents1 #mainDescriptionBackIMG img, #contents1 #subDescriptionBackIMG img").delay(2000).fadeTo(1000, 0);
                                 $("#logoSVG").delay(2000).fadeOut(1750);
                                 $("header h1#mainLogo").delay(2000).fadeTo(1750, 1);
+                                $('#contents1 #myPortfolio span').clearQueue();
                                 setTimeout(function () {
-                                    $('#contents1 #myPortfolio span').clearQueue().fadeOut(1000);
-                                    setTimeout(function () {
-                                        $('#contents1 #kojiyamauchi span').each(function (index) {
-                                            $(this).delay(index * 45).animate({
-                                                'top': '0px',
-                                                'opacity': 1
-                                            }, 750, 'easeOutExpo');
-                                        });
-                                    }, 750);
-                                }, 2000);
+                                    $('#contents1 #myPortfolio span').each(function (index, callBack) {
+                                        $(this).delay(index * 45).animate({
+                                            'top': '30px',
+                                            'opacity': 0
+                                        }, 750, 'easeInExpo');
+                                        var callBack = setTimeout(function () {
+                                            $('#contents1 #kojiyamauchi span').each(function (index) {
+                                                $(this).delay(index * 45).animate({
+                                                    'top': '0px',
+                                                    'opacity': 1
+                                                }, 750, 'easeOutExpo');
+                                            });
+                                        }, 2000);
+                                    });
+                                }, 1900);
                                 setTimeout(function () {
                                     $("a").removeClass("introduction");
-                                }, 5000);
-                                $("#motionSkipBox").delay(5000).animate({
+                                }, 6000);
+                                $("#motionSkipBox").delay(6000).animate({
                                     "right": -motionSkipBoxWidth + "px"
                                 }, 1000, "easeInExpo", function () {
                                     $(this).hide();
                                 });
                                 setTimeout(function () {
                                     $('#motionSkip').removeClass('comp');
-                                }, 5000);
+                                }, 6000);
                                 //copyrightAction!!
                                 $("footer p").textillate({
                                     loop: true,
                                     minDisplayTime: 2000,
-                                    initialDelay: 5500,
+                                    initialDelay: 6500,
                                     autoStart: true,
                                     in: {
                                         effect: "flash",
@@ -534,7 +540,7 @@ jQuery(function ($) {
                                 //copyrightActionEnd
                             });
                         });
-                    }, 4100);
+                    }, 4250);
                 });
             });
         });
