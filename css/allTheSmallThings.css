@@ -453,8 +453,8 @@ header h1#mainLogo a:hover {
   transform: scale(1.45);
 }
 #socialLink ul li a.pc:hover::before {
-  -webkit-animation: fireworks 0.65s ease-out 0s 1 normal;
-  animation: fireworks 0.65s ease-out 0s 1 normal;
+  -webkit-animation: fireworks 0.45s ease-out 0.2s 1 normal;
+  animation: fireworks 0.45s ease-out 0.2s 1 normal;
 }
 @-webkit-keyframes fireworks {
   0% {
