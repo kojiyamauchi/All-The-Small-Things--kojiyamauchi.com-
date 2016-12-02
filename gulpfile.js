@@ -1,4 +1,6 @@
 var gulp = require("gulp"), // call gulp.
+    browserify = require('browserify'), // Require Browserify.
+    source = require('vinyl-source-stream'), // Need To Use Browserify.
     plumber = require("gulp-plumber"), // case, error task. don't stop watch plugin.
     compass = require("gulp-compass"), // sass compass pulgin.
     gutil = require("gulp-util"), // gulp-util plugin.
@@ -20,16 +22,14 @@ var gulp = require("gulp"), // call gulp.
     notUpLoadFileWrite = (["!css/ie.css", "!css/print.css", "!css/screen.css", "!css/ie.css.map", "!css/print.css.map", "!css/screen.css.map", "!sass/ie.scss", "!sass/print.scss", "!sass/screen.scss", "!**/.DS_Store", "!node_modules/**/*"]), // don't upload file write.
     upLoadFile = upLoadFileWrite.concat(notUpLoadFileWrite); //ftp upload file. variable upLoadFileWrite concatenate variable notUpLoadFileWrite.
 
-// sass compass.
-gulp.task("compass", function () {
-    gulp.src("sass/*.scss")
-        .pipe(plumber()) // case, sass compile error. don't stop watch.
-        .pipe(compass({
-            config_file: "sass/config.rb",
-            comments: false,
-            sass: "sass/",
-            css: "css/"
-        }));
+// Browserify.
+gulp.task('browserify', function () {
+    browserify({
+            entries: ['src/AddFileName.js']
+        })
+        .bundle()
+        .pipe(source('AddFileName.js'))
+        .pipe(gulp.dest('js/'));
 });
 
 // compression images.
@@ -44,6 +44,18 @@ gulp.task("compressionImages", function () {
             })]
         }))
         .pipe(gulp.dest(compressionImageFold));
+});
+
+// sass compass.
+gulp.task("compass", function () {
+    gulp.src("sass/*.scss")
+        .pipe(plumber()) // case, sass compile error. don't stop watch.
+        .pipe(compass({
+            config_file: "sass/config.rb",
+            comments: false,
+            sass: "sass/",
+            css: "css/"
+        }));
 });
 
 // add vendor prefix automatically.
@@ -131,6 +143,7 @@ gulp.task("ftpUpLoad", function () {
 
 // gulp default task, terminal command "gulp".
 gulp.task("default", ["browserSync"], function () { // first task, local server connect & local browser sync.
+    //gulp.watch("src/*", ["browserify"]); // JS File Browserify.
     gulp.watch(noCompressionImagesFold, ["compressionImages"]); // watching noCompressionImages fold changed images, compression images.
     gulp.watch("sass/*.scss", ["compass"]); // watching sass file save's auto compile, using compass.
     gulp.watch("css/*.css", ["autoprefixer"]); // watching change's CSS flie. add vendor prefix automatically.
