@@ -2,7 +2,8 @@ var gulp = require("gulp"), // call gulp.
     browserify = require('browserify'), // Require Browserify.
     source = require('vinyl-source-stream'), // Need To Use Browserify.
     plumber = require("gulp-plumber"), // case, error task. don't stop watch plugin.
-    compass = require("gulp-compass"), // sass compass pulgin.
+    sass = require("gulp-sass"), // sass file compile plugin.
+    sourcemaps = require("gulp-sourcemaps"), // write sourcemaps.
     gutil = require("gulp-util"), // gulp-util plugin.
     imageMin = require("gulp-imagemin"), // images compression plugin.
     pngImageMin = require("imagemin-pngquant"), // png images compression plugin.
@@ -46,16 +47,16 @@ gulp.task("compressionImages", function () {
         .pipe(gulp.dest(compressionImageFold));
 });
 
-// sass compass.
-gulp.task("compass", function () {
+// sass compile.
+gulp.task("sass", function () {
     gulp.src("sass/*.scss")
-        .pipe(plumber()) // case, sass compile error. don't stop watch.
-        .pipe(compass({
-            config_file: "sass/config.rb",
-            comments: false,
-            sass: "sass/",
-            css: "css/"
-        }));
+        .pipe(plumber())
+        .pipe(sourcemaps.init())
+        .pipe(sass({
+            outputStyle: 'expanded'
+        }))
+        .pipe(sourcemaps.write("../maps"))
+        .pipe(gulp.dest("css/"));
 });
 
 // add vendor prefix automatically.
@@ -145,7 +146,7 @@ gulp.task("ftpUpLoad", function () {
 gulp.task("default", ["browserSync"], function () { // first task, local server connect & local browser sync.
     //gulp.watch("src/*", ["browserify"]); // JS File Browserify.
     gulp.watch(noCompressionImagesFold, ["compressionImages"]); // watching noCompressionImages fold changed images, compression images.
-    gulp.watch("sass/*.scss", ["compass"]); // watching sass file save's auto compile, using compass.
+    gulp.watch("sass/*.scss", ["sass"]); // watching sass file save's auto compile.
     gulp.watch("css/*.css", ["autoprefixer"]); // watching change's CSS flie. add vendor prefix automatically.
     gulp.watch("css/*.css", ["cssmin"]); // watching change's CSS flie, File Compression.
     gulp.watch("js/*.js", ["jsmin"]); // watching change's JS flie, File Compression.

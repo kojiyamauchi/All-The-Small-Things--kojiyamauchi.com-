@@ -116,17 +116,19 @@ a {
   color: #000;
   background: transparent;
 }
+
 a:active, a:hover, a:link, a:visited {
   text-decoration: none;
   color: #000;
 }
+
 a:hover {
   color: inherit;
   /*親要素の継承*/
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
-    /* On Hold
-opacity: 0.4;
-*/
+  /* On Hold
+    opacity: 0.4;
+    */
 }
 
 img {
@@ -180,24 +182,28 @@ textarea {
     /* Add Property */
   }
 }
+
 @media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
   /* Chrome Hack */
   * {
     /* Add Property */
   }
 }
+
 @-moz-document url-prefix() {
   /* FireFox Hack */
   * {
     /* Add Property */
   }
 }
+
 @media all and (-ms-high-contrast: none) {
   /* IE Hack */
   * {
     /* Add Property */
   }
 }
+
 /*==================================================================
 All The Small Things, Top Page.
 ===================================================================*/
@@ -238,6 +244,7 @@ header h1#mainLogo {
   transform: scale(1);
   opacity: 0;
 }
+
 header h1#mainLogo.IEandOldIphoneIntroAnimations {
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
@@ -248,6 +255,7 @@ header h1#mainLogo.IEandOldIphoneIntroAnimations {
   -ms-transform: scale(0.85);
   transform: scale(0.85);
 }
+
 header h1#mainLogo a {
   display: inline-block;
   margin: 60px 0 0;
@@ -262,6 +270,7 @@ header h1#mainLogo a {
   font-size: 10em;
   font-weight: normal;
 }
+
 header h1#mainLogo a:hover {
   -webkit-transition: all 0.65s ease-in;
   transition: all 0.65s ease-in;
@@ -287,16 +296,19 @@ header h1#mainLogo a:hover {
     transform: scale(0.85);
   }
 }
+
 #mainDescription {
   position: relative;
   width: 320px;
   height: 30px;
   margin: 70px auto 0;
 }
+
 #mainDescription h2 {
   color: #555;
   font-family: sans-serif;
 }
+
 #mainDescription h2#kojiyamauchi {
   position: absolute;
   z-index: 3;
@@ -306,18 +318,22 @@ header h1#mainLogo a:hover {
   height: 30px;
   line-height: 30px;
 }
+
 #mainDescription h2#kojiyamauchi span {
   position: relative;
   font-size: 1.125em;
   font-weight: bold;
 }
+
 #mainDescription h2#kojiyamauchi span#last {
   display: inline-block;
 }
+
 #mainDescription h2#kojiyamauchi span#last.comp {
   -webkit-animation: rotateY 0.1s linear 0s infinite normal;
   animation: rotateY 0.1s linear 0s infinite normal;
 }
+
 @-webkit-keyframes rotateY {
   0% {
     -webkit-transform: rotateY(0deg);
@@ -328,6 +344,7 @@ header h1#mainLogo a:hover {
     transform: rotateY(360deg);
   }
 }
+
 @keyframes rotateY {
   0% {
     -webkit-transform: rotateY(0deg);
@@ -338,6 +355,7 @@ header h1#mainLogo a:hover {
     transform: rotateY(360deg);
   }
 }
+
 #mainDescription h2#myPortfolio {
   position: absolute;
   z-index: 2;
@@ -347,6 +365,7 @@ header h1#mainLogo a:hover {
   height: 30px;
   line-height: 30px;
 }
+
 #mainDescription h2#myPortfolio span {
   position: relative;
   top: 30px;
@@ -354,6 +373,7 @@ header h1#mainLogo a:hover {
   font-size: 1.125em;
   font-weight: bold;
 }
+
 #mainDescription #mainDescriptionBackIMG img {
   position: absolute;
   z-index: 0;
@@ -371,6 +391,7 @@ header h1#mainLogo a:hover {
   height: 30px;
   margin: 15px auto 0;
 }
+
 #subDescription h3 {
   position: absolute;
   z-index: 1;
@@ -384,6 +405,7 @@ header h1#mainLogo a:hover {
   font-style: italic;
   line-height: 30px;
 }
+
 #subDescription #subDescriptionBackIMG img {
   position: absolute;
   z-index: 0;
@@ -398,22 +420,27 @@ header h1#mainLogo a:hover {
 #socialLink {
   margin: 48px 0 0;
 }
+
 #socialLink h4 {
   color: #555;
   font-family: sans-serif;
   font-size: 1.125em;
   font-weight: bold;
 }
+
 #socialLink h4 span {
   font-weight: bold;
 }
+
 #socialLink ul {
   display: table;
   margin: 20px auto 0;
 }
+
 #socialLink ul li {
   display: table-cell;
 }
+
 #socialLink ul li a {
   display: inline-block;
   height: 40px;
@@ -427,6 +454,7 @@ header h1#mainLogo a:hover {
   line-height: 40px;
   position: relative;
 }
+
 #socialLink ul li a::before {
   width: 40px;
   height: 40px;
@@ -438,6 +466,7 @@ header h1#mainLogo a:hover {
   transform: scale(1);
   opacity: 0;
 }
+
 #socialLink ul li a.pc {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -445,6 +474,7 @@ header h1#mainLogo a:hover {
   -ms-transform: scale(1);
   transform: scale(1);
 }
+
 #socialLink ul li a.pc:hover {
   -webkit-transition: all 0.65s;
   transition: all 0.65s;
@@ -452,10 +482,12 @@ header h1#mainLogo a:hover {
   -ms-transform: scale(1.45);
   transform: scale(1.45);
 }
+
 #socialLink ul li a.pc:hover::before {
   -webkit-animation: fireworks 0.45s ease-out 0.2s 1 normal;
   animation: fireworks 0.45s ease-out 0.2s 1 normal;
 }
+
 @-webkit-keyframes fireworks {
   0% {
     -webkit-transform: scale(1);
@@ -471,6 +503,7 @@ header h1#mainLogo a:hover {
     opacity: 0;
   }
 }
+
 @keyframes fireworks {
   0% {
     -webkit-transform: scale(1);
@@ -486,40 +519,52 @@ header h1#mainLogo a:hover {
     opacity: 0;
   }
 }
+
 #socialLink ul li:nth-child(1) a {
   background-image: url("../images/iconTwitter.svg");
 }
+
 #socialLink ul li:nth-child(1) a::before {
   background: url("../images/twitterFireWorks.svg") no-repeat;
 }
+
 #socialLink ul li:nth-child(2) a {
   background-image: url("../images/iconFaceBook.svg");
 }
+
 #socialLink ul li:nth-child(2) a::before {
   background: url("../images/faceBookFireWorks.svg") no-repeat;
 }
+
 #socialLink ul li:nth-child(3) a {
   background-image: url("../images/iconLinkedIn.svg");
 }
+
 #socialLink ul li:nth-child(3) a::before {
   background: url("../images/linkedInFireWorks.svg") no-repeat;
 }
+
 #socialLink ul li:nth-child(4) a {
   background-image: url("../images/iconBehance.svg");
 }
+
 #socialLink ul li:nth-child(4) a::before {
   background: url("../images/behanceFireWorks.svg") no-repeat;
 }
+
 #socialLink ul li:nth-child(5) a {
   background-image: url("../images/iconGitHub.svg");
 }
+
 #socialLink ul li:nth-child(5) a::before {
   background: url("../images/gitHubFireWorks.svg") no-repeat;
 }
+
 #socialLink ul li:nth-child(6) a {
   padding: 0 0 0 50px;
   background-image: url("../images/iconInstagram.svg");
 }
+
 #socialLink ul li:nth-child(6) a::before {
   margin: 0 0 0 -50px;
   background: url("../images/instagramFireWorks.svg") no-repeat;
@@ -546,10 +591,12 @@ header h1#mainLogo a:hover {
     background-image: url("../images/iconInstagram.png");
   }
 }
+
 footer {
   margin: 65px 0 0;
   padding: 0 0 30px;
 }
+
 footer p {
   color: #999;
   text-shadow: 0 1px 0 #fff;
@@ -566,30 +613,36 @@ footer p {
   width: 100px;
   height: 132px;
 }
+
 #motionSkipBox:hover {
   cursor: pointer;
 }
+
 #motionSkipBox img {
   width: 100%;
 }
+
 #motionSkipBox img#motionSkipSneaker {
   position: absolute;
   z-index: 101;
   top: 0;
   left: 0;
 }
+
 #motionSkipBox img#motionSkipNote {
   position: absolute;
   z-index: 102;
   top: 0;
   left: 0;
 }
+
 #motionSkipBox img#motionSkipMask {
   position: absolute;
   z-index: 103;
   top: 0;
   left: 0;
 }
+
 #motionSkipBox p#greeting {
   position: absolute;
   top: -65px;
@@ -602,22 +655,26 @@ footer p {
   font-size: 1.25em;
   font-weight: bold;
 }
+
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   #motionSkipBox p#greeting {
     /* Safari Hack */
     letter-spacing: -0.05em;
   }
 }
+
 @media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
   #motionSkipBox p#greeting {
     /* Chrome Hack */
     letter-spacing: 0;
   }
 }
+
 #motionSkipBox p#greeting.comp {
   -webkit-animation: greeting 1s linear 0.25s 1 normal;
   animation: greeting 1s linear 0.25s 1 normal;
 }
+
 @-webkit-keyframes greeting {
   0% {
     -webkit-transform: translate(0, 0);
@@ -635,6 +692,7 @@ footer p {
     opacity: 0;
   }
 }
+
 @keyframes greeting {
   0% {
     -webkit-transform: translate(0, 0);
@@ -652,6 +710,7 @@ footer p {
     opacity: 0;
   }
 }
+
 #motionSkipBox #motionSkip {
   position: absolute;
   top: -22%;
@@ -664,6 +723,7 @@ footer p {
   transform: translate(0, 10%);
   opacity: 0;
 }
+
 #motionSkipBox #motionSkip.comp {
   -webkit-transition: all 0.75s ease 0.25s;
   transition: all 0.75s ease 0.25s;
@@ -672,6 +732,7 @@ footer p {
   transform: translate(0, 0);
   opacity: 1;
 }
+
 #motionSkipBox #motionSkip p {
   margin: 0;
   padding: 15px;
@@ -683,18 +744,21 @@ footer p {
   font-size: 1.5em;
   font-weight: bold;
 }
+
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   #motionSkipBox #motionSkip p {
     /* Safari Hack */
     letter-spacing: -0.05em;
   }
 }
+
 @media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
   #motionSkipBox #motionSkip p {
     /* Chrome Hack */
     letter-spacing: 0;
   }
 }
+
 #motionSkipBox #motionSkip:before {
   position: absolute;
   z-index: -1;
@@ -708,6 +772,7 @@ footer p {
   border-radius: 0 30px 0 30px;
   background: #000;
 }
+
 #motionSkipBox #motionSkip:after {
   position: absolute;
   z-index: -1;
@@ -734,15 +799,18 @@ footer p {
   margin-top: -40px;
   color: #000;
 }
+
 #introWelcome .welcomeFont {
   font-family: 'Roboto', sans-serif;
   font-size: 3.75em;
   font-weight: bold;
   font-style: italic;
 }
+
 #introWelcome .fa-paper-plane-o {
   font-size: 4em;
 }
+
 #introWelcome .allTheSmallThingsLogoWrap {
   position: relative;
   top: 10px;
@@ -750,24 +818,28 @@ footer p {
   width: 6em;
   height: 6em;
 }
+
 #introWelcome .allTheSmallThingsLogoWrap .logoSneaker {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
 }
+
 #introWelcome .allTheSmallThingsLogoWrap .logoSneaker img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
 }
+
 #introWelcome .allTheSmallThingsLogoWrap .logoNote {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
 }
+
 #introWelcome .allTheSmallThingsLogoWrap .logoNote img {
   position: absolute;
   z-index: 10000;
@@ -775,12 +847,14 @@ footer p {
   left: 0;
   width: 100%;
 }
+
 #introWelcome .allTheSmallThingsLogoWrap .logoMask {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
 }
+
 #introWelcome .allTheSmallThingsLogoWrap .logoMask img {
   position: absolute;
   z-index: 10001;
@@ -788,6 +862,7 @@ footer p {
   left: 0;
   width: 100%;
 }
+
 #introWelcome .hopping {
   position: relative;
 }
@@ -797,6 +872,7 @@ footer p {
   margin: 0 auto;
   padding: 45px 0 0;
 }
+
 #logoSVG svg path {
   opacity: 0;
 }
@@ -813,15 +889,12 @@ Responsive Media Queries
   body {
     font-size: 150%;
   }
-
   #contents1 {
     margin-top: -45px;
   }
-
   header h1#mainLogo a {
     margin: 90px 0 0;
   }
-
   #mainDescription {
     width: 480px;
     height: 45px;
@@ -836,7 +909,6 @@ Responsive Media Queries
     width: 45px;
     height: 45px;
   }
-
   #subDescription {
     width: 750px;
     height: 45px;
@@ -851,7 +923,6 @@ Responsive Media Queries
     width: 45px;
     height: 45px;
   }
-
   #socialLink {
     margin: 72px 0 0;
   }
@@ -874,12 +945,10 @@ Responsive Media Queries
   #socialLink ul li:nth-child(6) a::before {
     margin: 0 0 0 -75px;
   }
-
   footer {
     margin: 97.5px 0 0;
     padding: 0 0 45px;
   }
-
   #motionSkipBox {
     width: 150px;
     height: 198px;
@@ -904,30 +973,26 @@ Responsive Media Queries
     height: 45px;
     border-radius: 0 45px 0 45px;
   }
-
   #introWelcome {
     margin-top: -60px;
   }
-
   #logoSVG {
     width: 1170px;
     padding: 67.5px 0 0;
   }
 }
+
 @media screen and (min-width: 1445px) and (max-width: 2060px) {
   /* iMac 21.5inch. */
   body {
     font-size: 120%;
   }
-
   #contents1 {
     margin-top: -36px;
   }
-
   header h1#mainLogo a {
     margin: 72px 0 0;
   }
-
   #mainDescription {
     width: 384px;
     height: 36px;
@@ -942,7 +1007,6 @@ Responsive Media Queries
     width: 36px;
     height: 36px;
   }
-
   #subDescription {
     width: 600px;
     height: 36px;
@@ -957,7 +1021,6 @@ Responsive Media Queries
     width: 36px;
     height: 36px;
   }
-
   #socialLink {
     margin: 57.6px 0 0;
   }
@@ -980,12 +1043,10 @@ Responsive Media Queries
   #socialLink ul li:nth-child(6) a::before {
     margin: 0 0 0 -60px;
   }
-
   footer {
     margin: 78px 0 0;
     padding: 0 0 36px;
   }
-
   #motionSkipBox {
     width: 120px;
     height: 158.4px;
@@ -1010,16 +1071,15 @@ Responsive Media Queries
     height: 36px;
     border-radius: 0 36px 0 36px;
   }
-
   #introWelcome {
     margin-top: -48px;
   }
-
   #logoSVG {
     width: 936px;
     padding: 54px 0 0;
   }
 }
+
 /*
 @media screen and (min-width: 1381px) and (max-width:1444px)  { Large PC.
 }
@@ -1030,15 +1090,12 @@ Responsive Media Queries
     min-width: 800px;
     font-size: 87.5%;
   }
-
   #contents1 {
     margin-top: -26.25px;
   }
-
   header h1#mainLogo a {
     margin: 52.5px 0 0;
   }
-
   #mainDescription {
     width: 280px;
     height: 26.25px;
@@ -1053,7 +1110,6 @@ Responsive Media Queries
     width: 26.25px;
     height: 26.25px;
   }
-
   #subDescription {
     width: 437.5px;
     height: 26.25px;
@@ -1068,7 +1124,6 @@ Responsive Media Queries
     width: 26.25px;
     height: 26.25px;
   }
-
   #socialLink {
     margin: 42px 0 0;
   }
@@ -1091,12 +1146,10 @@ Responsive Media Queries
   #socialLink ul li:nth-child(6) a::before {
     margin: 0 0 0 -43.75px;
   }
-
   footer {
     margin: 56.875px 0 0;
     padding: 0 0 26.25px;
   }
-
   #motionSkipBox {
     width: 87.5px;
     height: 115.5px;
@@ -1121,16 +1174,15 @@ Responsive Media Queries
     height: 26.25px;
     border-radius: 0 26.25px 0 26.25px;
   }
-
   #introWelcome {
     margin-top: -35px;
   }
-
   #logoSVG {
     width: 682.5px;
     padding: 39.375px 0 0;
   }
 }
+
 /*
 @media screen and (max-width: 991px) { Tablet.
 }
@@ -1140,11 +1192,11 @@ Responsive Media Queries
   .displayPC {
     display: none;
   }
-
   .displaySP {
     display: block;
   }
 }
+
 /*
 @media screen and (max-width:480px) { Small Smart Phone2.
 }
