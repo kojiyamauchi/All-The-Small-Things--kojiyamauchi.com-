@@ -28,11 +28,11 @@ var gulp = require("gulp"), // call gulp.
 gulp.task('browserify', function () {
     browserify({
             debug: true,
-            entries: ['src/riot.js']
+            entries: ['script/main.js']
         })
         .transform([riotify])
         .bundle()
-        .pipe(source('riot.js'))
+        .pipe(source('main.js'))
         .pipe(gulp.dest('js/'));
 });
 
@@ -147,7 +147,7 @@ gulp.task("ftpUpLoad", function () {
 
 // gulp default task, terminal command "gulp".
 gulp.task("default", ["browserSync"], function () { // first task, local server connect & local browser sync.
-    //gulp.watch(["src/*", "tags/*"], ["browserify"]); // JS File Browserify.
+    //gulp.watch(["script/*", "tags/*"], ["browserify"]); // JS File Browserify.
     //gulp.watch("js/*.js", ["jsmin"]); // watching change's JS flie, File Compression.
     gulp.watch("sass/*.scss", ["sass"]); // watching sass file save's auto compile.
     gulp.watch("css/*.css", ["autoprefixer"]); // watching change's CSS flie. add vendor prefix automatically.
