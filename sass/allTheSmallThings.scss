@@ -261,7 +261,7 @@ header h1#mainLogo {
         -ms-transform: scale(1);
         transform: scale(1);
         color: #222;
-        text-shadow: 0 -1px 0 #fff;
+        text-shadow: 3px 3px 3px rgba(0,0,0,0.55);
         font-family: 'Schoolbell', cursive;
         font-size: 10em;
         font-weight: normal;
@@ -275,6 +275,7 @@ header h1#mainLogo {
             -moz-transform: scale(0.75);
             -ms-transform: scale(0.75);
             transform: scale(0.75);
+            text-shadow: none;
         }
     }
 }
