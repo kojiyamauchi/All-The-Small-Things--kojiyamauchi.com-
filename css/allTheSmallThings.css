@@ -233,6 +233,11 @@ body {
   height: 100%;
 }
 
+header {
+  position: relative;
+  height: 380px;
+}
+
 header h1#mainLogo {
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
@@ -264,6 +269,7 @@ header h1#mainLogo a {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
+  opacity: 1;
   color: #222;
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.45);
   font-family: 'Schoolbell', cursive;
@@ -277,7 +283,48 @@ header h1#mainLogo a:hover {
   -webkit-transform: scale(0.75);
   -ms-transform: scale(0.75);
   transform: scale(0.75);
+  letter-spacing: -0.04em;
+  opacity: 0.45;
   text-shadow: none;
+  line-height: 0.85;
+}
+
+@-moz-document url-prefix() {
+  header h1#mainLogo a {
+    /* FireFox Hack */
+  }
+  header h1#mainLogo a:hover {
+    letter-spacing: 0;
+  }
+}
+
+header p {
+  position: absolute;
+  z-index: -1;
+  bottom: 20px;
+  display: none;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #ff4e4e;
+  font-family: 'Patrick Hand',cursive;
+  font-size: 22px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  header p {
+    /* Safari Hack */
+    letter-spacing: 0;
+  }
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  header p {
+    /* Chrome Hack */
+    letter-spacing: 0.05em;
+  }
 }
 
 @media all and (-ms-high-contrast: none) {
@@ -443,6 +490,7 @@ header h1#mainLogo a:hover {
 }
 
 #socialLink ul li a {
+  position: relative;
   display: inline-block;
   height: 40px;
   padding: 0 35px 0 55px;
@@ -453,15 +501,14 @@ header h1#mainLogo a:hover {
   font-size: 0.875em;
   font-weight: bold;
   line-height: 40px;
-  position: relative;
 }
 
 #socialLink ul li a::before {
+  position: absolute;
   width: 40px;
   height: 40px;
-  content: "";
-  position: absolute;
   margin: 0 0 0 -55px;
+  content: "";
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
@@ -893,8 +940,14 @@ Responsive Media Queries
   #contents1 {
     margin-top: -45px;
   }
+  header {
+    height: 570px;
+  }
   header h1#mainLogo a {
     margin: 90px 0 0;
+  }
+  header p {
+    font-size: 33px;
   }
   #mainDescription {
     width: 480px;
@@ -991,8 +1044,14 @@ Responsive Media Queries
   #contents1 {
     margin-top: -36px;
   }
+  header {
+    height: 456px;
+  }
   header h1#mainLogo a {
     margin: 72px 0 0;
+  }
+  header p {
+    font-size: 26.4px;
   }
   #mainDescription {
     width: 384px;
@@ -1094,8 +1153,14 @@ Responsive Media Queries
   #contents1 {
     margin-top: -26.25px;
   }
+  header {
+    height: 332.5px;
+  }
   header h1#mainLogo a {
     margin: 52.5px 0 0;
+  }
+  header p {
+    font-size: 19.25px;
   }
   #mainDescription {
     width: 280px;

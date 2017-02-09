@@ -120,6 +120,9 @@ jQuery(function ($) {
         con2 = $('#contents2');
 
     con1.find('#mainLogo a').on('mouseover', function () {
+        $(this).css({
+            'background-color': '#fff;'
+        }).parents('header').children('p').delay(250).fadeIn(1);
         con1.find("h2#kojiyamauchi span").each(function (index) {
             $(this).delay(index * 50).animate({
                 "top": "-2px"
@@ -151,6 +154,9 @@ jQuery(function ($) {
     });
 
     con2.find('#mainLogo a').on('mouseover', function () {
+        $(this).css({
+            'background-color': '#fff;'
+        }).parents('header').children('p').delay(250).fadeIn(1);
         con2.find("h2#kojiyamauchi span").each(function (index) {
             $(this).delay(index * 50).animate({
                 "top": "-2px"
