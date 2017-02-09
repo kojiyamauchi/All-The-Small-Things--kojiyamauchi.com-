@@ -265,7 +265,7 @@ header h1#mainLogo a {
   -ms-transform: scale(1);
   transform: scale(1);
   color: #222;
-  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.55);
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.45);
   font-family: 'Schoolbell', cursive;
   font-size: 10em;
   font-weight: normal;
