@@ -150,7 +150,6 @@ jQuery(function ($) {
             }
         });
     }).on('mouseout', function () {
-        $(this).parents('header').children('p').delay(500).fadeOut(1);
         con1.find('h2#kojiyamauchi span').clearQueue().stop(true).removeAttr('style');
     });
 
@@ -185,8 +184,11 @@ jQuery(function ($) {
             }
         });
     }).on('mouseout', function () {
-        $(this).parents('header').children('p').delay(500).fadeOut(1);
         con2.find('h2#kojiyamauchi span').clearQueue().stop(true).removeAttr('style');
+    });
+    $(window).on('load resize', function () {
+        con1.children('header').children('p').hide();
+        con2.children('header').children('p').hide();
     });
 
     //socialLinkAction!!
