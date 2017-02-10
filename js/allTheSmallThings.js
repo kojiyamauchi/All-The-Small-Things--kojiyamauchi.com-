@@ -186,7 +186,7 @@ jQuery(function ($) {
     }).on('mouseout', function () {
         con2.find('h2#kojiyamauchi span').clearQueue().stop(true).removeAttr('style');
     });
-    $(window).on('load resize', function () {
+    $(window).on('resize', function () {
         con1.children('header').children('p').hide();
         con2.children('header').children('p').hide();
     });
