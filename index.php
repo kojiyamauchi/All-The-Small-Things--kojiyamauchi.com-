@@ -143,6 +143,7 @@
     <img src="images/allTheSmallThingsLogoMask.svg" id="motionSkipMask">
     <p id="greeting">COMPLETE!!!</p>
   </div>
+  <h2>テスト2</h2>
 <!----------------------------------------- Intro Animation End. ----------------------------------------->
 </body>
 </html>
