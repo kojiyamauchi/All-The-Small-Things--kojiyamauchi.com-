@@ -20,15 +20,15 @@ var gulp = require("gulp"), // call gulp.
     sftp = require("gulp-sftp"), // sftp plugin.
     using_PHP_LocalServerConnect = require("gulp-connect-php"), // using php local server connect plugin.
     browserSync = require("browser-sync"), // local browser sync plugin.
-    upLoadFileWrite = (["index.php", "*.html", "css/*.css", "css/**/*", "css/*.css.map", "sass/*.scss", "js/*.js", "images/*", "font/*"]), // upload file write.
-    notUpLoadFileWrite = (["!css/ie.css", "!css/print.css", "!css/screen.css", "!css/ie.css.map", "!css/print.css.map", "!css/screen.css.map", "!sass/ie.scss", "!sass/print.scss", "!sass/screen.scss", "!**/.DS_Store", "!node_modules/**/*"]), // don't upload file write.
+    upLoadFileWrite = (["index.php", "*.html", "css/*.css", "css/**/*", "css/*.css.map", "sass/*.scss", "js/*.js", "images/*", "font/*", "maps/*"]), // upload file write.
+    notUpLoadFileWrite = (["!**/.DS_Store", "!node_modules/**/*", "!main/", "!colorOfLife/", "!gulpfile.js", "!privatePortfolio/", "!README.md", "!sass/config.rb", "!sass/sass.command", "!studySpace/", "!work/!", "!jsSample/", "!base/"]), // don't upload file write.
     upLoadFile = upLoadFileWrite.concat(notUpLoadFileWrite); //ftp upload file. variable upLoadFileWrite concatenate variable notUpLoadFileWrite.
 
 // Browserify.
 gulp.task('browserify', function () {
     browserify({
             debug: true,
-            entries: ['script/main.js']
+            entries: ['base/main.js']
         })
         .transform([riotify])
         .bundle()
@@ -147,14 +147,14 @@ gulp.task("ftpUpLoad", function () {
 
 // gulp default task, terminal command "gulp".
 gulp.task("default", ["browserSync"], function () { // first task, local server connect & local browser sync.
-    //gulp.watch(["script/*", "tags/*"], ["browserify"]); // JS File Browserify.
-    //gulp.watch("js/*.js", ["jsmin"]); // watching change's JS flie, File Compression.
+    //gulp.watch(["base/*", "tags/*"], ["browserify"]); // JS File Browserify.
+    gulp.watch("js/*.js", ["jsmin"]); // watching change's JS flie, File Compression.
     gulp.watch("sass/*.scss", ["sass"]); // watching sass file save's auto compile.
     gulp.watch("css/*.css", ["autoprefixer"]); // watching change's CSS flie. add vendor prefix automatically.
     gulp.watch("css/*.css", ["cssmin"]); // watching change's CSS flie, File Compression.
     gulp.watch(noCompressionImagesFold, ["compressionImages"]); // watching noCompressionImages fold changed images, compression images.
     //gulp.watch("**/*", ["rename"]); // watching change's HTML flie. Rename PHP file.
     //gulp.watch("**/*", ["delete"]); // watching rename PHP file. delet HTML file.
-    //gulp.watch(upLoadFile, ["ftpUpLoad"]); // watching file save's auto ftp upload.
+    gulp.watch(upLoadFile, ["ftpUpLoad"]); // watching file save's auto ftp upload.
     gulp.watch(upLoadFile, ["localBrowserReload"]); // watching file save's local browser reload.
 });
