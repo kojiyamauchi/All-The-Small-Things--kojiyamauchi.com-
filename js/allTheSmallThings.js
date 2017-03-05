@@ -514,7 +514,7 @@ jQuery(function ($) {
                                                     'opacity': 1
                                                 }, 750, 'easeOutExpo');
                                             });
-                                        }, 2000);
+                                        }, 1000);
                                     });
                                 }, 1900);
                                 setTimeout(function () {
