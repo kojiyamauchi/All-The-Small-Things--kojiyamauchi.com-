@@ -9,3 +9,4 @@ jsSamples/
 .DS_Store
 node_modules/
 script/
+webGL_sample/
