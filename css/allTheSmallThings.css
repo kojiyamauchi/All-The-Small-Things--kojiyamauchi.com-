@@ -302,7 +302,6 @@ header p {
   position: absolute;
   z-index: -1;
   bottom: 20px;
-  display: none;
   width: 100%;
   text-align: center;
   letter-spacing: 0.05em;
@@ -311,6 +310,16 @@ header p {
   font-size: 22px;
   font-weight: bold;
   font-style: italic;
+  opacity: 0;
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-transition: opacity 1s linear;
+  transition: opacity 1s linear;
+  -webkit-transition: -webkit-transform 1s linear;
+  transition: -webkit-transform 1s linear;
+  transition: transform 1s linear;
+  transition: transform 1s linear, -webkit-transform 1s linear;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
@@ -325,6 +334,19 @@ header p {
     /* Chrome Hack */
     letter-spacing: 0.05em;
   }
+}
+
+header p.showAndMove {
+  opacity: 1;
+  -webkit-transform: translate(0, 100%);
+  -ms-transform: translate(0, 100%);
+  transform: translate(0, 100%);
+  -webkit-transition: opacity 2s;
+  transition: opacity 2s;
+  -webkit-transition: -webkit-transform 6s;
+  transition: -webkit-transform 6s;
+  transition: transform 6s;
+  transition: transform 6s, -webkit-transform 6s;
 }
 
 @media all and (-ms-high-contrast: none) {

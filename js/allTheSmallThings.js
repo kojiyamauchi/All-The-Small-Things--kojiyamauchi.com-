@@ -122,7 +122,10 @@ jQuery(function ($) {
     con1.find('#mainLogo a').on('mouseover', function () {
         $(this).css({
             'background-color': '#fff;'
-        }).parents('header').children('p').delay(250).fadeIn(1);
+        });
+        setTimeout(function () {
+            con1.find('header p').addClass('showAndMove'); //.delay(250).fadeIn(1);
+        }, 200);
         con1.find("h2#kojiyamauchi span").each(function (index) {
             $(this).delay(index * 50).animate({
                 "top": "-2px"
@@ -150,13 +153,17 @@ jQuery(function ($) {
             }
         });
     }).on('mouseout', function () {
+        $(this).parents('header').children('p').removeClass('showAndMove');
         con1.find('h2#kojiyamauchi span').clearQueue().stop(true).removeAttr('style');
     });
 
     con2.find('#mainLogo a').on('mouseover', function () {
         $(this).css({
             'background-color': '#fff;'
-        }).parents('header').children('p').delay(250).fadeIn(1);
+        });
+        setTimeout(function () {
+            con2.find('header p').addClass('showAndMove'); //.delay(250).fadeIn(1);
+        }, 200);
         con2.find("h2#kojiyamauchi span").each(function (index) {
             $(this).delay(index * 50).animate({
                 "top": "-2px"
@@ -184,11 +191,12 @@ jQuery(function ($) {
             }
         });
     }).on('mouseout', function () {
+        $(this).parents('header').children('p').removeClass('showAndMove');
         con2.find('h2#kojiyamauchi span').clearQueue().stop(true).removeAttr('style');
     });
     $(window).on('resize', function () {
-        con1.children('header').children('p').hide();
-        con2.children('header').children('p').hide();
+        con1.children('header').children('p').removeClass('showAndMove'); //.hide();
+        con2.children('header').children('p').removeClass('showAndMove'); //.hide();
     });
 
     //socialLinkAction!!
