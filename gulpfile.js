@@ -28,11 +28,11 @@ var gulp = require("gulp"), // call gulp.
 gulp.task('browserify', function () {
     browserify({
             debug: true,
-            entries: ['base/main.js']
+            entries: ['base/core.js']
         })
         .transform([riotify])
         .bundle()
-        .pipe(source('main.js'))
+        .pipe(source('core.js'))
         .pipe(gulp.dest('js/'));
 });
 
@@ -84,7 +84,7 @@ gulp.task('cssmin', function () {
 
 // JS File Compression.
 gulp.task('jsmin', function () {
-    gulp.src('js/allTheSmallThings.js')
+    gulp.src(['js/allTheSmallThings.js', 'js/core.js'])
         .pipe(jsmin({
             preserveComments: 'some'
         }))
@@ -147,8 +147,8 @@ gulp.task("ftpUpLoad", function () {
 
 // gulp default task, terminal command "gulp".
 gulp.task("default", ["browserSync"], function () { // first task, local server connect & local browser sync.
-    //gulp.watch(["base/*", "tags/*"], ["browserify"]); // JS File Browserify.
-    gulp.watch("js/*.js", ["jsmin"]); // watching change's JS flie, File Compression.
+    gulp.watch(["base/*", "tags/*"], ["browserify"]); // JS File Browserify.
+    gulp.watch(['js/allTheSmallThings.js', 'js/core.js'], ["jsmin"]); // watching change's JS flie, File Compression.
     gulp.watch("sass/*.scss", ["sass"]); // watching sass file save's auto compile.
     gulp.watch("css/*.css", ["autoprefixer"]); // watching change's CSS flie. add vendor prefix automatically.
     gulp.watch("css/*.css", ["cssmin"]); // watching change's CSS flie, File Compression.
