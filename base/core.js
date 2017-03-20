@@ -2,8 +2,6 @@
 
 var THREE = require('three');
 
-
-
 var jQuery = require('jQuery');
 
 jQuery(function ($) {
