@@ -712,6 +712,7 @@ footer {
         top: -22%;
         left: -60%;
         width: 110px;
+        height: 78px;
         transition: all 0.75s ease 0.25s;
         transform: translate(0,10%);
         opacity: 0;
@@ -724,6 +725,8 @@ footer {
 
         p {
             margin: 0;
+            width: 100%;
+            height: 100%;
             padding: 15px;
             letter-spacing: 0;
             color: #fff;

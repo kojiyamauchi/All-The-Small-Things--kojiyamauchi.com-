@@ -67,11 +67,9 @@ jQuery(function ($) {
         nowHours = todayObject.getHours();
     if(nowHours >= 4 && nowHours < 11) {
         $('p#greeting').text('GOOD MORNING!!!');
-    } else if(nowHours >= 11 && nowHours < 14) {
+    } else if(nowHours >= 11 && nowHours < 21) {
         $('p#greeting').text('HELLO!!!');
-    } else if(nowHours >= 14 && nowHours < 22) {
-        $('p#greeting').text('COMPLETE!!!');
-    } else if(nowHours >= 22 || nowHours < 4) {
+    } else if(nowHours >= 21 || nowHours < 4) {
         $('p#greeting').text('GOOD NIGHT!!!');
     }
 
@@ -112,6 +110,11 @@ jQuery(function ($) {
             }, 1000, "easeInExpo", function () {
                 $(this).hide();
             });
+        });
+        $('#motionSkip').children('p').text('DONE!!!').css({
+            'padding-top': 0,
+            'padding-bottom': 0,
+            'line-height': '74px'
         });
     });
 
