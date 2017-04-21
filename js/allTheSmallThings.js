@@ -111,11 +111,7 @@ jQuery(function ($) {
                 $(this).hide();
             });
         });
-        $('#motionSkip').children('p').text('DONE!!!').css({
-            'padding-top': 0,
-            'padding-bottom': 0,
-            'line-height': '74px'
-        });
+        $('#motionSkip').find('span').text('DONE!!!');
     });
 
     // Main Logo Hover Action.

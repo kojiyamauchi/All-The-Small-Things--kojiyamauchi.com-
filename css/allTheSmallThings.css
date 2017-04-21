@@ -808,25 +808,30 @@ footer p {
   margin: 0;
   width: 100%;
   height: 100%;
-  padding: 15px;
-  letter-spacing: 0;
-  color: #fff;
   border-radius: 100%;
   background: #000;
+  display: table;
+}
+
+#motionSkipBox #motionSkip p span {
+  letter-spacing: 0;
+  color: #fff;
   font-family: 'Patrick Hand', cursive;
   font-size: 1.5em;
   font-weight: bold;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
-  #motionSkipBox #motionSkip p {
+  #motionSkipBox #motionSkip p span {
     /* Safari Hack */
     letter-spacing: -0.05em;
   }
 }
 
 @media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
-  #motionSkipBox #motionSkip p {
+  #motionSkipBox #motionSkip p span {
     /* Chrome Hack */
     letter-spacing: 0;
   }

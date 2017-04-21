@@ -135,13 +135,13 @@
   </div>
   <div id="motionSkipBox">
     <div id="motionSkip">
-      <p>MOTION<br>
-        SKIP!!!</p>
+      <p><span>MOTION<br>
+        SKIP!!!</span></p>
     </div>
     <img src="images/allTheSmallThingsLogoSneaker.svg" id="motionSkipSneaker">
     <img src="images/allTheSmallThingsLogoNote.svg" id="motionSkipNote">
     <img src="images/allTheSmallThingsLogoMask.svg" id="motionSkipMask">
-    <p id="greeting">COMPLETE!!!</p>
+    <p id="greeting"></p>
   </div>
 <!----------------------------------------- Intro Animation End. ----------------------------------------->
 </body>

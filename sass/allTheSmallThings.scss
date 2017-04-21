@@ -727,21 +727,26 @@ footer {
             margin: 0;
             width: 100%;
             height: 100%;
-            padding: 15px;
-            letter-spacing: 0;
-            color: #fff;
             border-radius: 100%;
             background: #000;
-            font-family: 'Patrick Hand', cursive;
-            font-size: 1.5em;
-            font-weight: bold;
-            @media screen and (-webkit-min-device-pixel-ratio: 0) {
-                /* Safari Hack */
-                letter-spacing: -0.05em;
-            }
-            @media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
-                /* Chrome Hack */
+            display: table;
+
+            span {
                 letter-spacing: 0;
+                color: #fff;
+                font-family: 'Patrick Hand', cursive;
+                font-size: 1.5em;
+                font-weight: bold;
+                display: table-cell;
+                vertical-align: middle;
+                @media screen and (-webkit-min-device-pixel-ratio: 0) {
+                    /* Safari Hack */
+                    letter-spacing: -0.05em;
+                }
+                @media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+                    /* Chrome Hack */
+                    letter-spacing: 0;
+                }
             }
         }
 
