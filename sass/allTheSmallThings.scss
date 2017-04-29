@@ -270,6 +270,7 @@ header {
             font-family: 'Schoolbell', cursive;
             font-size: 10em;
             font-weight: normal;
+            filter: blur(0px);
 
             &:hover {
                 -webkit-transition: all 0.65s ease-in;
@@ -284,6 +285,7 @@ header {
                 opacity: 0.45;
                 text-shadow: none;
                 line-height: 0.85;
+                filter: blur(5px);
             }
             @-moz-document url-prefix() {
                 /* FireFox Hack */
@@ -300,17 +302,17 @@ header {
         bottom: 20px;
         //display: none;
         width: 100%;
+        transition: opacity 1s linear;
+        transition: transform 1s linear;
+        transform: translate(0,0);
         text-align: center;
         letter-spacing: 0.05em;
+        opacity: 0;
         color: #ff4e4e;
         font-family: 'Patrick Hand',cursive;
         font-size: 22px;
         font-weight: bold;
         font-style: italic;
-        opacity: 0;
-        transform: translate(0,0);
-        transition: opacity 1s linear;
-        transition: transform 1s linear;
         @media screen and (-webkit-min-device-pixel-ratio: 0) {
             /* Safari Hack */
             letter-spacing: 0;
@@ -321,10 +323,10 @@ header {
         }
 
         &.showAndMove {
-            opacity: 1;
-            transform: translate(0,100%);
             transition: opacity 2s;
             transition: transform 6s;
+            transform: translate(0,100%);
+            opacity: 1;
         }
     }
 }
@@ -502,10 +504,12 @@ header {
                 &.pc {
                     transition: all 0.5s;
                     transform: scale(1);
+                    filter: brightness(1);
 
                     &:hover {
                         transition: all 0.65s;
                         transform: scale(1.45);
+                        filter: brightness(1.25);
 
                         &::before {
                             animation: fireworks 0.45s ease-out 0.2s 1 normal;
@@ -724,21 +728,21 @@ footer {
         }
 
         p {
-            margin: 0;
+            display: table;
             width: 100%;
             height: 100%;
+            margin: 0;
             border-radius: 100%;
             background: #000;
-            display: table;
 
             span {
+                display: table-cell;
+                vertical-align: middle;
                 letter-spacing: 0;
                 color: #fff;
                 font-family: 'Patrick Hand', cursive;
                 font-size: 1.5em;
                 font-weight: bold;
-                display: table-cell;
-                vertical-align: middle;
                 @media screen and (-webkit-min-device-pixel-ratio: 0) {
                     /* Safari Hack */
                     letter-spacing: -0.05em;
