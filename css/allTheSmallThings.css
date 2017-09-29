@@ -279,14 +279,8 @@ header h1#mainLogo a {
 }
 
 header h1#mainLogo a:hover {
-  -webkit-transition: all 0.65s ease-in;
-  transition: all 0.65s ease-in;
-  -webkit-transform: scale(0.75);
-  -ms-transform: scale(0.75);
-  transform: scale(0.75);
-  letter-spacing: -0.04em;
-  opacity: 0.45;
-  text-shadow: none;
+  -webkit-transition: all 0.45s linear;
+  transition: all 0.45s linear;
   line-height: 0.85;
   /*filter: blur(5px);*/
 }
@@ -889,7 +883,7 @@ footer p {
 #introWelcome .welcomeFont {
   font-family: 'Roboto', sans-serif;
   font-size: 3.75em;
-  font-weight: bold;
+  font-weight: 800;
   font-style: italic;
 }
 
