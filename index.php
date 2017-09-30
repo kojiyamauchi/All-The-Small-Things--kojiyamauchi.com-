@@ -41,7 +41,7 @@
   <!---------------------------------------------------- Default Display. ---------------------------------------------------->
   <div id="contents1">
     <header>
-      <h1 id="mainLogo"><a href="http://kojiyamauchi.com/main/" class="introduction">All The Small<br>Things,</a></h1>
+      <h1 id="mainLogo"><a href="http://kojiyamauchi.com/main/" class="introduction"><span class="fn-over">All The Small</span><br><span class="fn-under">Things,</span></a></h1>
       <p>- ENTER -</p>
     </header>
     <div id="siteDescription">
@@ -79,7 +79,7 @@
   <!----------------------------- Case. Motion Skip Button Click Display. Default Display None. ----------------------------->
   <div id="contents2">
     <header>
-      <h1 id="mainLogo"><a href="http://kojiyamauchi.com/main/">All The Small<br>Things,</a></h1>
+      <h1 id="mainLogo"><a href="http://kojiyamauchi.com/main/"><span class="fn-over">All The Small</span><br><span class="fn-under">Things,</span></a></h1>
       <p>- ENTER -</p>
     </header>
     <div id="siteDescription">

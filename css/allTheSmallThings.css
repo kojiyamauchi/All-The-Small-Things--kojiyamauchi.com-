@@ -281,7 +281,7 @@ header h1#mainLogo a {
 header h1#mainLogo a:hover {
   -webkit-transition: all 0.45s linear;
   transition: all 0.45s linear;
-  line-height: 0.85;
+  line-height: 0.8;
   /*filter: blur(5px);*/
 }
 
@@ -335,10 +335,10 @@ header p {
 header p.showAndMove {
   -webkit-transition: opacity 2s;
   transition: opacity 2s;
-  -webkit-transition: -webkit-transform 6s;
-  transition: -webkit-transform 6s;
-  transition: transform 6s;
-  transition: transform 6s, -webkit-transform 6s;
+  -webkit-transition: -webkit-transform 5s;
+  transition: -webkit-transform 5s;
+  transition: transform 5s;
+  transition: transform 5s, -webkit-transform 5s;
   -webkit-transform: translate(0, 100%);
   -ms-transform: translate(0, 100%);
   transform: translate(0, 100%);
