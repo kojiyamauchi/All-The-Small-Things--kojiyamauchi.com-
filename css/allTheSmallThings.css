@@ -818,7 +818,7 @@ footer p {
   opacity: 1;
 }
 
-#motionSkipBox #motionSkip.ballon-scale {
+#motionSkipBox #motionSkip.balloon-scale {
   -webkit-animation-name: scales;
   animation-name: scales;
   -webkit-animation-duration: 1s;

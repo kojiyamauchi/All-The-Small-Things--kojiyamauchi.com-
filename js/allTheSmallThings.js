@@ -105,7 +105,7 @@ jQuery(function ($) {
     }, 250, 'swing', function () {
       $(this).stop(true).animate({
         'top': '0px'
-      }, 250, 'swing').prevAll('#motionSkip').removeClass('ballon-scale').delay(100).queue(function () {
+      }, 250, 'swing').prevAll('#motionSkip').removeClass('balloon-scale').delay(100).queue(function () {
         $(this).removeClass('fin').addClass('default').dequeue();
       }).parent('#motionSkipBox').delay(250).animate({
         'right': -motionSkipBoxWidth + 'px'
@@ -260,7 +260,7 @@ jQuery(function ($) {
           'right': 0
         }, 1000, 'easeOutExpo');
         $('#motionSkip').removeClass('default').addClass('comp').delay(1000).queue(function () {
-          $(this).addClass('ballon-scale fin').removeClass('comp');
+          $(this).addClass('balloon-scale fin').removeClass('comp');
         });
         $('#contents1').delay(1000).animate({
           'margin-top': '0px',
@@ -292,7 +292,7 @@ jQuery(function ($) {
                             $(this).hide();
                           });
                           setTimeout(function () {
-                            $('#motionSkip').removeClass('ballon-scale').delay(100).queue(function () {
+                            $('#motionSkip').removeClass('balloon-scale').delay(100).queue(function () {
                               $(this).removeClass('fin').addClass('default').dequeue();
                             });
                           }, 2000);
@@ -442,7 +442,7 @@ jQuery(function ($) {
           'right': 0
         }, 1000, 'easeOutExpo');
         $('#motionSkip').removeClass('default').addClass('comp').delay(1000).queue(function () {
-          $(this).addClass('ballon-scale fin').removeClass('comp').dequeue();
+          $(this).addClass('balloon-scale fin').removeClass('comp').dequeue();
         });
         setTimeout(function () {
           logoSVGAnimation();
@@ -542,7 +542,7 @@ jQuery(function ($) {
                   $(this).hide();
                 });
                 setTimeout(function () {
-                  $('#motionSkip').removeClass('ballon-scale').delay(100).queue(function () {
+                  $('#motionSkip').removeClass('balloon-scale').delay(100).queue(function () {
                     $(this).removeClass('fin').addClass('default').dequeue();
                   });
                 }, 6000);
