@@ -134,7 +134,7 @@
       </span> </span>
   </div>
   <div id="motionSkipBox">
-    <div id="motionSkip">
+    <div id="motionSkip" class="default">
       <p><span>MOTION<br>
         SKIP!!!</span></p>
     </div>

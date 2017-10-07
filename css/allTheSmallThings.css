@@ -789,21 +789,74 @@ footer p {
   left: -60%;
   width: 110px;
   height: 78px;
+}
+
+#motionSkipBox #motionSkip.default {
   -webkit-transition: all 0.75s ease 0.25s;
   transition: all 0.75s ease 0.25s;
-  -webkit-transform: translate(0, 10%);
-  -ms-transform: translate(0, 10%);
-  transform: translate(0, 10%);
+  -webkit-transform: translate(0, 10%) scale(1);
+  -ms-transform: translate(0, 10%) scale(1);
+  transform: translate(0, 10%) scale(1);
   opacity: 0;
 }
 
 #motionSkipBox #motionSkip.comp {
   -webkit-transition: all 0.75s ease 0.25s;
   transition: all 0.75s ease 0.25s;
+  -webkit-transform: translate(0, 0) scale(1.05);
+  -ms-transform: translate(0, 0) scale(1.05);
+  transform: translate(0, 0) scale(1.05);
+  opacity: 1;
+}
+
+#motionSkipBox #motionSkip.fin {
+  -webkit-transition: all 0.75s ease 0.25s;
+  transition: all 0.75s ease 0.25s;
   -webkit-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
   transform: translate(0, 0);
   opacity: 1;
+}
+
+#motionSkipBox #motionSkip.ballon-scale {
+  -webkit-animation-name: scales;
+  animation-name: scales;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes scales {
+  0% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  50% {
+    -webkit-transform: scale(0.975);
+    transform: scale(0.975);
+  }
+  100% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+}
+
+@keyframes scales {
+  0% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  50% {
+    -webkit-transform: scale(0.975);
+    transform: scale(0.975);
+  }
+  100% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
 }
 
 #motionSkipBox #motionSkip p {

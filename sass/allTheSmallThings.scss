@@ -716,14 +716,43 @@ footer {
     left: -60%;
     width: 110px;
     height: 78px;
-    transition: all 0.75s ease 0.25s;
-    transform: translate(0,10%);
-    opacity: 0;
+
+    &.default {
+      transition: all 0.75s ease 0.25s;
+      transform: translate(0,10%) scale(1);
+      opacity: 0;
+    }
 
     &.comp {
       transition: all 0.75s ease 0.25s;
+      transform: translate(0,0) scale(1.05);
+      opacity: 1;
+    }
+
+    &.fin {
+      transition: all 0.75s ease 0.25s;
       transform: translate(0,0);
       opacity: 1;
+    }
+
+    &.ballon-scale {
+      animation-name: scales;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+    }
+    @keyframes scales {
+      0% {
+        transform: scale(1.05);
+      }
+
+      50% {
+        transform: scale(0.975);
+      }
+
+      100% {
+        transform: scale(1.05);
+      }
     }
 
     p {
