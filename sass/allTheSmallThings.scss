@@ -1018,19 +1018,21 @@ Responsive Media Queries
 
     #motionSkip {
       width: 165px;
+      height: 78px * 1.5;
 
       p {
         padding: 15px * 1.5;
       }
 
       &:before {
-        right: 15px;
+        right: 4px;
         width: 45px;
         height: 45px;
         border-radius: 0 45px 0 45px;
       }
 
       &:after {
+        right: -8px;
         width: 45px;
         height: 45px;
         border-radius: 0 45px 0 45px;
@@ -1155,6 +1157,7 @@ Responsive Media Queries
 
     #motionSkip {
       width: 132px;
+      height: 78px * 1.2;
 
       p {
         padding: 15px * 1.2;
@@ -1168,6 +1171,7 @@ Responsive Media Queries
       }
 
       &:after {
+        right: 0;
         width: 36px;
         height: 36px;
         border-radius: 0 36px 0 36px;
@@ -1297,6 +1301,9 @@ Responsive Media Queries
 
     #motionSkip {
       width: 96.25px;
+      height: 78px * 0.875;
+      top: -28%;
+      left: -70%;
 
       p {
         padding: 15px * 0.875;

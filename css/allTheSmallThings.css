@@ -1097,17 +1097,19 @@ Responsive Media Queries
   }
   #motionSkipBox #motionSkip {
     width: 165px;
+    height: 117px;
   }
   #motionSkipBox #motionSkip p {
     padding: 22.5px;
   }
   #motionSkipBox #motionSkip:before {
-    right: 15px;
+    right: 4px;
     width: 45px;
     height: 45px;
     border-radius: 0 45px 0 45px;
   }
   #motionSkipBox #motionSkip:after {
+    right: -8px;
     width: 45px;
     height: 45px;
     border-radius: 0 45px 0 45px;
@@ -1201,6 +1203,7 @@ Responsive Media Queries
   }
   #motionSkipBox #motionSkip {
     width: 132px;
+    height: 93.6px;
   }
   #motionSkipBox #motionSkip p {
     padding: 18px;
@@ -1212,6 +1215,7 @@ Responsive Media Queries
     border-radius: 0 36px 0 36px;
   }
   #motionSkipBox #motionSkip:after {
+    right: 0;
     width: 36px;
     height: 36px;
     border-radius: 0 36px 0 36px;
@@ -1310,6 +1314,9 @@ Responsive Media Queries
   }
   #motionSkipBox #motionSkip {
     width: 96.25px;
+    height: 68.25px;
+    top: -28%;
+    left: -70%;
   }
   #motionSkipBox #motionSkip p {
     padding: 13.125px;
