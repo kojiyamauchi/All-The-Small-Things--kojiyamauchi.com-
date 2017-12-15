@@ -21,7 +21,7 @@ import sourcemaps from 'gulp-sourcemaps' // write sourcemaps.
 import imageMin from 'gulp-imagemin' // images compression plugin.
 import pngImageMin from 'imagemin-pngquant' // png images compression plugin.
 import svgMin from 'gulp-svgmin' // svg compression plugin,
-// For Images.
+// For FTP.
 import ftp from 'vinyl-ftp' // ftp plugin.
 import sftp from 'gulp-sftp' // sftp plugin.
 // For BrowserSync.
