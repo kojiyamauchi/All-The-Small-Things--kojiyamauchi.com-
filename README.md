@@ -1,5 +1,7 @@
-All The Small Things, / kojiyamauchi.com<br>
-My Portfolio Web Site.<br>
+# All The Small Things, / kojiyamauchi.com<br>
+
+## My Portfolio Web Site.<br>
+
 <http://kojiyamauchi.com>
 
 I'm a Web Designer & Developer.<br>
