@@ -6,4 +6,4 @@
 
 I'm a Web Designer & Developer.<br>
 Based in Tokyo, Japan.<br><br>
-HTML / HTML5 / CSS / CSS3 / Sass / Material Design Lite / JavaScript / WebGL / Riot.js / jQuery / gulp / GitHub / WordPress / Photoshop / Illustrator / GitHub Atom & Emmet.
+HTML / HTML5 / CSS / CSS3 / Sass / Material Design Lite / JavaScript / WebGL / D3.js / Riot.js / jQuery / gulp / GitHub / WordPress / Photoshop / Illustrator / GitHub Atom & Emmet.
