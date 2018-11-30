@@ -5,13 +5,13 @@
   <meta charset="utf-8">
   <meta http-equiv="content-language" content="ja">
   <title>All The Small Things, | www.kojiyamauchi.com</title>
-  <meta name="title" content="koji yamauchi" />
+  <meta name="title" content="All The Small Things, | www.kojiyamauchi.com" />
   <meta name="viewport" content="width=800">
   <meta name="description" content="Koji Yamauchi's portfolio site. Live In Tokyo, Japan. I'm Freelance Web Designer and Web Developer. Welcome to my canvas. I Make More.">
   <meta name="keywords" content="graphic,fasion,music,punk,All The Small Things,kojiyamauchi.com,koji yamauchi,kojiyamauchi,kojiyyyyamauchi,ヤマウチコウジ, ヤマウチ コウジ,山内康次,山内 康次,Web Design,Web Designer,Web Development,Web Developer,ウェブデザイン,ウェブデザイナー,ウェブデベロップ,ウェブデベロッパー, グラフィック,絵,音楽,洋服">
   <meta property="og:type" content="website" />
+  <meta property="og:title" content="All The Small Things, | www.kojiyamauchi.com" />
   <meta property="og:url" content="http://kojiyamauchi.com" />
-  <meta property="og:title" content="All The Small Things," />
   <meta property="og:description" content="Koji Yamauchi's Portfolio Web Site." />
   <meta property="og:image" content="http://kojiyamauchi.com/index_files/images/allTheSmallThingsIMG.jpg" />
   <meta property="og:site_name" content="kojiyamauchi.com" />
